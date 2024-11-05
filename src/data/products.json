@@ -1,0 +1,538 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Teak Wood Planks",
+            "category": "Hardwood",
+            "price": 6999.0,
+            "discount": 10,
+            "image": ["/hardwood.png", "/softwood.png", "/exotic.png"],
+            "description": "High-grade teak wood ideal for doors, furniture, and high-durability projects.",
+            "specifications": {
+                "length": "2.4 meters",
+                "width": "150 mm",
+                "thickness": "20 mm",
+                "grade": "A"
+            },
+            "stock": 0,
+            "quantity": 1,
+            "featured": true,
+            "rating": 4.5,
+            "reviews": [
+                {
+                    "id": 1,
+                    "user": "Ravi Kumar",
+                    "rating": 5,
+                    "comment": "Top-notch quality, perfect for cabinets and shelves."
+                },
+                {
+                    "id": 2,
+                    "user": "Aditi Sharma",
+                    "rating": 4,
+                    "comment": "Good quality, but a bit heavy for smaller projects."
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Pine Wood Panels",
+            "category": "Softwood",
+            "price": 2999.0,
+            "discount": 10,
+            "image": ["/softwood.png", "/hardwood.png", "/exotic.png"],
+            "description": "Affordable pine panels suitable for interior design, wall paneling, and DIY projects.",
+            "specifications": {
+                "length": "3 meters",
+                "width": "200 mm",
+                "thickness": "25 mm",
+                "grade": "No. 2"
+            },
+            "stock": 120,
+            "quantity": 1,
+            "featured": false,
+            "rating": 4.5,
+            "reviews": [
+                
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Neem Wood Logs",
+            "category": "Hardwood",
+            "price": 499.0,
+            "discount": 13,
+            "image": ["/hardwood.png", "/softwood.png", "/exotic.png"],
+            "description": "Eco-friendly neem wood for smaller projects and carving. Known for its anti-termite properties.",
+            "specifications": {
+                "length": "1 meter",
+                "width": "100 mm",
+                "thickness": "15 mm",
+                "grade": "Rustic"
+            },
+            "stock": 200,
+            "quantity": 1,
+            "featured": true,
+            "rating": 4.5,
+            "reviews": [
+                {
+                    "id": 1,
+                    "user": "Rahul Jain",
+                    "rating": 5,
+                    "comment": "Great for carving projects and durable."
+                },
+                {
+                    "id": 2,
+                    "user": "Madhuri Joshi",
+                    "rating": 4,
+                    "comment": "Nice wood, strong but light."
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Mango Wood Blocks",
+            "category": "Hardwood",
+            "price": 1599.0,
+            "discount": 16,
+            "image": ["/hardwood.png", "/softwood.png", "/exotic.png"],
+            "description": "Sustainable mango wood blocks, ideal for decorative pieces and small furniture.",
+            "specifications": {
+                "length": "1.5 meters",
+                "width": "100 mm",
+                "thickness": "30 mm",
+                "grade": "B"
+            },
+            "stock": 125,
+            "quantity": 1,
+            "featured": true,
+            "rating": 4.5,
+            "reviews": [
+                {
+                    "id": 1,
+                    "user": "Ananya Desai",
+                    "rating": 5,
+                    "comment": "Perfect for furniture decor, and eco-friendly."
+                },
+                {
+                    "id": 2,
+                    "user": "Suresh K.",
+                    "rating": 4,
+                    "comment": "Good quality but needs extra sanding."
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Sandalwood Pieces",
+            "category": "Exotic Wood",
+            "price": 14999.0,
+            "discount": 13,
+            "image": ["/exotic.png", "/hardwood.png", "/softwood.png"],
+            "description": "Rare sandalwood pieces, popular for carvings and traditional décor due to their fragrance and durability.",
+            "specifications": {
+                "length": "500 mm",
+                "width": "50 mm",
+                "thickness": "50 mm",
+                "grade": "Premium"
+            },
+            "stock": 155,
+            "quantity": 1,
+            "featured": true,
+            "rating": 4.5,
+            "reviews": [
+                {
+                    "id": 1,
+                    "user": "Lakshmi V.",
+                    "rating": 5,
+                    "comment": "Exquisite quality and lovely scent. Great for gifts."
+                },
+                {
+                    "id": 2,
+                    "user": "Gopal N.",
+                    "rating": 5,
+                    "comment": "Expensive but worth it for special occasions."
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Bamboo Sticks",
+            "category": "Eco-Friendly",
+            "price": 199.0,
+            "discount": 17,
+            "image": ["/hardwood.png", "/softwood.png", "/exotic.png"],
+            "description": "Sustainable bamboo sticks for gardening and light construction work. Known for fast growth and eco-friendliness.",
+            "specifications": {
+                "length": "2 meters",
+                "width": "30 mm",
+                "thickness": "10 mm",
+                "grade": "Standard"
+            },
+            "stock": 170,
+            "quantity": 1,
+            "featured": true,
+            "rating": 4.5,
+            "reviews": [
+                {
+                    "id": 1,
+                    "user": "Rakesh Verma",
+                    "rating": 4,
+                    "comment": "Useful for garden trellises and eco-conscious projects."
+                },
+                {
+                    "id": 2,
+                    "user": "Priya R.",
+                    "rating": 4,
+                    "comment": "Sturdy and affordable."
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Mahogany Wood Planks",
+            "category": "Hardwood",
+            "price": 8999.0,
+            "discount": 19,
+            "image": ["/hardwood.png", "/softwood.png", "/exotic.png"],
+            "description": "High-quality mahogany wood, perfect for premium furniture and cabinetry.",
+            "specifications": {
+                "length": "2.5 meters",
+                "width": "200 mm",
+                "thickness": "25 mm",
+                "grade": "A"
+            },
+            "stock": 100,
+            "quantity": 1,
+            "featured": true,
+            "rating": 4.5,
+            "reviews": [
+                {
+                    "id": 1,
+                    "user": "Vikram Singh",
+                    "rating": 5,
+                    "comment": "Excellent wood for high-end furniture."
+                },
+                {
+                    "id": 2,
+                    "user": "Neha Gupta",
+                    "rating": 4,
+                    "comment": "Beautiful grain and finish."
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Cedar Wood Panels",
+            "category": "Softwood",
+            "price": 3999.0,
+            "discount": 15,
+            "image": ["/softwood.png", "/hardwood.png", "/exotic.png"],
+            "description": "Durable cedar wood panels, ideal for outdoor projects and fencing.",
+            "specifications": {
+                "length": "3 meters",
+                "width": "150 mm",
+                "thickness": "20 mm",
+                "grade": "No. 1"
+            },
+            "stock": 80,
+            "quantity": 1,
+            "featured": false,
+            "rating": 4.5,
+            "reviews": [
+                {
+                    "id": 1,
+                    "user": "Amit Patel",
+                    "rating": 5,
+                    "comment": "Great for outdoor use, resistant to weather."
+                },
+                {
+                    "id": 2,
+                    "user": "Kavita Rao",
+                    "rating": 4,
+                    "comment": "Good quality but a bit pricey."
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Rosewood Logs",
+            "category": "Exotic Wood",
+            "price": 12999.0,
+            "discount": 10,
+            "image": ["/exotic.png", "/hardwood.png", "/softwood.png"],
+            "description": "Premium rosewood logs, known for their rich color and durability.",
+            "specifications": {
+                "length": "1.2 meters",
+                "width": "100 mm",
+                "thickness": "30 mm",
+                "grade": "Premium"
+            },
+            "stock": 60,
+            "quantity": 1,
+            "featured": true,
+            "rating": 4.5,
+            "reviews": [
+                {
+                    "id": 1,
+                    "user": "Sanjay Mehta",
+                    "rating": 5,
+                    "comment": "Beautiful wood, perfect for musical instruments."
+                },
+                {
+                    "id": 2,
+                    "user": "Rina Shah",
+                    "rating": 5,
+                    "comment": "Excellent quality, worth the price."
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Walnut Wood Planks",
+            "category": "Hardwood",
+            "price": 7999.0,
+            "discount": 10,
+            "image": ["/hardwood.png", "/softwood.png", "/exotic.png"],
+            "description": "High-grade walnut wood, ideal for fine furniture and cabinetry.",
+            "specifications": {
+                "length": "2.2 meters",
+                "width": "180 mm",
+                "thickness": "22 mm",
+                "grade": "A"
+            },
+            "stock": 90,
+            "quantity": 1,
+            "featured": true,
+            "rating": 4.5,
+            "reviews": [
+                {
+                    "id": 1,
+                    "user": "Rajesh Kumar",
+                    "rating": 5,
+                    "comment": "Excellent wood for high-end projects."
+                },
+                {
+                    "id": 2,
+                    "user": "Meera Nair",
+                    "rating": 4,
+                    "comment": "Beautiful finish and grain."
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Maple Wood Boards",
+            "category": "Hardwood",
+            "price": 5999.0,
+            "discount": 10,
+            "image": ["/hardwood.png", "/softwood.png", "/exotic.png"],
+            "description": "Durable maple wood boards, perfect for flooring and cabinetry.",
+            "specifications": {
+                "length": "2.5 meters",
+                "width": "150 mm",
+                "thickness": "20 mm",
+                "grade": "A"
+            },
+            "stock": 110,
+            "quantity": 1,
+            "featured": true,
+            "rating": 4.5,
+            "reviews": [
+                {
+                    "id": 1,
+                    "user": "Anil Sharma",
+                    "rating": 5,
+                    "comment": "Great for flooring, very durable."
+                },
+                {
+                    "id": 2,
+                    "user": "Sunita Rao",
+                    "rating": 4,
+                    "comment": "Good quality but a bit heavy."
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Cherry Wood Planks",
+            "category": "Hardwood",
+            "price": 6999.0,
+            "discount": 10,
+            "image": ["/hardwood.png", "/softwood.png", "/exotic.png"],
+            "description": "High-quality cherry wood, ideal for fine furniture and cabinetry.",
+            "specifications": {
+                "length": "2.4 meters",
+                "width": "150 mm",
+                "thickness": "20 mm",
+                "grade": "A"
+            },
+            "stock": 95,
+            "quantity": 1,
+            "featured": true,
+            "rating": 4.5,
+            "reviews": [
+                {
+                    "id": 1,
+                    "user": "Vijay Kumar",
+                    "rating": 5,
+                    "comment": "Excellent wood for high-end furniture."
+                },
+                {
+                    "id": 2,
+                    "user": "Pooja Singh",
+                    "rating": 4,
+                    "comment": "Beautiful grain and finish."
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "name": "Oak Wood Panels",
+            "category": "Hardwood",
+            "price": 4999.0,
+            "discount": 15,
+            "image": ["/hardwood.png", "/softwood.png", "/exotic.png"],
+            "description": "Durable oak wood panels, perfect for flooring and cabinetry.",
+            "specifications": {
+                "length": "2.5 meters",
+                "width": "150 mm",
+                "thickness": "20 mm",
+                "grade": "A"
+            },
+            "stock": 120,
+            "quantity": 1,
+            "featured": true,
+            "rating": 4.5,
+            "reviews": [
+                {
+                    "id": 1,
+                    "user": "Ramesh Patel",
+                    "rating": 5,
+                    "comment": "Great for flooring, very durable."
+                },
+                {
+                    "id": 2,
+                    "user": "Anita Rao",
+                    "rating": 4,
+                    "comment": "Good quality but a bit heavy."
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Birch Wood Boards",
+            "category": "Hardwood",
+            "price": 3999.0,
+            "discount": 20,
+            "image": ["/hardwood.png", "/softwood.png", "/exotic.png"],
+            "description": "Durable birch wood boards, perfect for cabinetry and furniture.",
+            "specifications": {
+                "length": "2.5 meters",
+                "width": "150 mm",
+                "thickness": "20 mm",
+                "grade": "A"
+            },
+            "stock": 130,
+            "quantity": 1,
+            "featured": true,
+            "rating": 4.5,
+            "reviews": [
+                {
+                    "id": 1,
+                    "user": "Suresh Kumar",
+                    "rating": 5,
+                    "comment": "Great for cabinetry, very durable."
+                },
+                {
+                    "id": 2,
+                    "user": "Rekha Singh",
+                    "rating": 4,
+                    "comment": "Good quality but a bit heavy."
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "name": "Ash Wood Planks",
+            "category": "Hardwood",
+            "price": 5999.0,
+            "discount": 10,
+            "image": ["/hardwood.png", "/softwood.png", "/exotic.png"],
+            "description": "High-quality ash wood, ideal for fine furniture and cabinetry.",
+            "specifications": {
+                "length": "2.4 meters",
+                "width": "150 mm",
+                "thickness": "20 mm",
+                "grade": "A"
+            },
+            "stock": 105,
+            "quantity": 1,
+            "featured": true,
+            "rating": 4.5,
+            "reviews": [
+                {
+                    "id": 1,
+                    "user": "Vikram Singh",
+                    "rating": 5,
+                    "comment": "Excellent wood for high-end furniture."
+                },
+                {
+                    "id": 2,
+                    "user": "Neha Gupta",
+                    "rating": 4,
+                    "comment": "Beautiful grain and finish."
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "name": "Teak Wood Veneer",
+            "category": "Hardwood",
+            "price": 2999.0,
+            "discount": 15,
+            "image": ["/hardwood.png", "/softwood.png", "/exotic.png"],
+            "description": "High-quality teak wood veneer, perfect for fine furniture and cabinetry.",
+            "specifications": {
+                "length": "2.4 meters",
+                "width": "150 mm",
+                "thickness": "20 mm",
+                "grade": "A"
+            },
+            "stock": 115,
+            "quantity": 1,
+            "featured": true,
+            "rating": 4.5,
+            "reviews": [
+                {
+                    "id": 1,
+                    "user": "Vijay Kumar",
+                    "rating": 5,
+                    "comment": "Excellent wood for high-end furniture."
+                },
+                {
+                    "id": 2,
+                    "user": "Pooja Singh",
+                    "rating": 4,
+                    "comment": "Beautiful grain and finish."
+                }
+            ]
+        }
+    ],
+    "categories": [
+        {
+            "name": "Hardwood",
+            "description": "Premium hardwood varieties for fine woodworking",
+            "image": "/hardwood.png"
+        },
+        {
+            "name": "Softwood",
+            "description": "Versatile softwood options for construction and general use and very soft premium wood to be used as furniture and home decor very very very premium",
+            "image": "/softwood.png"
+        },
+        {
+            "name": "Exotic Wood",
+            "description": "Unique and rare wood species for special projects",
+            "image": "/exotic.png"
+        }
+    ]
+}
