@@ -1,14 +1,14 @@
-import Terms from '@/pages/Terms'
+import OrderDetailsPage from '@/pages/OrderDetails'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Terms Of Services',
+  title: 'Order Information',
   description: 'Explore our wide range of high-quality wood products. Find the perfect wood for your next project.',
   applicationName: '', //application name
   referrer: 'origin-when-cross-origin',
   keywords: ['Next.js', 'React', 'JavaScript'],
   openGraph: {
-    title: 'Terms Of Services',
+    title: 'Order Information',
     description: 'Explore our wide range of high-quality wood products. Find the perfect wood for your next project.',
     url: 'https://yourwebsite.com/404',
     siteName: 'Next.js',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     site: '@yourwebsite', // The Twitter username of the website or content creator
-    title: 'Terms Of Services',
+    title: 'Order Information',
     description: 'Explore our wide range of high-quality wood products. Find the perfect wood for your next project.',
     images: [
       {
@@ -68,8 +68,8 @@ export const metadata: Metadata = {
   category: 'technology',
 }
 
-export default function page() {
+export default function page({params}:{params:{id: string}}) {
   return (
-    <Terms />
+    <OrderDetailsPage params={params}/>
   )
 }

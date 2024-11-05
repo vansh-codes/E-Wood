@@ -2,14 +2,14 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
-import Link from 'next/link'
-import { FcGoogle } from 'react-icons/fc'
 import { useStore } from '@/context/StoreContext'
+import { FcGoogle } from 'react-icons/fc'
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
 const LoginPage: React.FC = () => {
   const [email, setEmail] = useState('')

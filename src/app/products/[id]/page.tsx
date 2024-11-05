@@ -1,14 +1,29 @@
-import Terms from '@/pages/Terms'
-import type { Metadata } from 'next'
+import ProductDetails from '@/pages/ProductDetails'
+import type { Metadata, ResolvingMetadata } from 'next'
+import productsData from '@/data/products.json'
 
-export const metadata: Metadata = {
-  title: 'Terms Of Services',
-  description: 'Explore our wide range of high-quality wood products. Find the perfect wood for your next project.',
+type Props = {
+  params: { id: string }
+}
+ 
+export async function generateMetadata(
+  { params }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  // read route params
+  const id = (await params).id
+ 
+  // fetch data
+  const product = productsData.products.find(p => p.id === Number(id))
+ 
+  return {
+    title: product ? product.name : 'Product not found',
+    description: 'Explore our wide range of high-quality wood products. Find the perfect wood for your next project.',
   applicationName: '', //application name
   referrer: 'origin-when-cross-origin',
   keywords: ['Next.js', 'React', 'JavaScript'],
   openGraph: {
-    title: 'Terms Of Services',
+    title: '404 - Not Found',
     description: 'Explore our wide range of high-quality wood products. Find the perfect wood for your next project.',
     url: 'https://yourwebsite.com/404',
     siteName: 'Next.js',
@@ -32,7 +47,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     site: '@yourwebsite', // The Twitter username of the website or content creator
-    title: 'Terms Of Services',
+    title: '404 - Not Found',
     description: 'Explore our wide range of high-quality wood products. Find the perfect wood for your next project.',
     images: [
       {
@@ -66,10 +81,11 @@ export const metadata: Metadata = {
   },
   assets: ['https://nextjs.org/assets'],  // url for all assets
   category: 'technology',
+  }
 }
 
-export default function page() {
+export default function page({params}: {params: {id: string}}) {
   return (
-    <Terms />
+    <ProductDetails params={params}/>
   )
 }

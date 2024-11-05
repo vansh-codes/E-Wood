@@ -3,11 +3,7 @@
 import React, { useState } from 'react'
 import { Share2 } from 'lucide-react'
 import { Button } from "@/components/ui/button"
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { toast } from "@/hooks/use-toast"
 
