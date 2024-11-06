@@ -1,3 +1,4 @@
+'use strict'
 import OrderConfirmationPage from "@/pages/OrderConfirmation"
 import type { Metadata } from 'next'
 

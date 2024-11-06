@@ -1,3 +1,4 @@
+'use strict'
 import Profile from '@/pages/Profile'
 import type { Metadata } from 'next'
 

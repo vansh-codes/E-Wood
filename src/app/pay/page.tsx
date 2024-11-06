@@ -1,3 +1,4 @@
+'use strict'
 import PaymentPage from '@/pages/Payment'
 import type { Metadata } from 'next'
 

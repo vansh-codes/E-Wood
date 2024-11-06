@@ -1,3 +1,4 @@
+'use strict'
 import Privacy from '@/pages/Privacy'
 import type { Metadata } from 'next'
 

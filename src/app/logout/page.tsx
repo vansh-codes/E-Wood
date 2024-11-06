@@ -1,3 +1,4 @@
+'use strict'
 import Logout from "@/components/Logout"
 import type { Metadata } from 'next'
 

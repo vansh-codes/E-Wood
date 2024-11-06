@@ -1,4 +1,4 @@
-import React from 'react'
+'use strict'
 import Contact from '@/pages/Contact'
 import type { Metadata } from 'next'
 

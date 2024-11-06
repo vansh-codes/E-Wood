@@ -1,3 +1,4 @@
+'use strict'
 import Products from '@/pages/Products'
 import type { Metadata } from 'next'
 

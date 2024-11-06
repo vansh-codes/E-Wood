@@ -1,3 +1,4 @@
+'use strict'
 import Terms from '@/pages/Terms'
 import type { Metadata } from 'next'
 

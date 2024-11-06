@@ -1,4 +1,4 @@
-import React from 'react'
+'use strict'
 import Wishlist from '@/pages/Wishlist'
 import type { Metadata } from 'next'
 

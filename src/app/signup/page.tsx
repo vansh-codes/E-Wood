@@ -1,3 +1,4 @@
+'use strict'
 import SignupPage from "@/components/Signup"
 import type { Metadata } from 'next'
 

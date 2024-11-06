@@ -1,3 +1,4 @@
+'use strict'
 import OrderDetailsPage from '@/pages/OrderDetails'
 import type { Metadata } from 'next'
 

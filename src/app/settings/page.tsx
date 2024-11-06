@@ -1,3 +1,4 @@
+'use strict'
 import Settings from '@/pages/Settings'
 import type { Metadata } from 'next'
 

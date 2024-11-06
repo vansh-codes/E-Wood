@@ -1,3 +1,4 @@
+'use strict'
 import LoginPage from '@/components/Login'
 import type { Metadata } from 'next'
 
@@ -67,7 +68,6 @@ export const metadata: Metadata = {
   assets: ['https://nextjs.org/assets'],  // url for all assets
   category: 'technology',
 }
-
 
 export default function page() {
   return (

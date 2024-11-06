@@ -1,3 +1,4 @@
+'use strict'
 import React from 'react'
 import Cart from '@/pages/Cart'
 import type { Metadata } from 'next'
