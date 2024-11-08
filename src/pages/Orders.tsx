@@ -17,7 +17,7 @@ import { orderDetails as allOrders } from '@/data/orders'
 import { toast } from "@/hooks/use-toast"
 import { Toaster } from "@/components/ui/toaster"
 
-export default function OrdersPage() {
+export default function Orders() {
   const router = useRouter()
   const [sortColumn, setSortColumn] = useState('date')
   const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('desc')

@@ -8,8 +8,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { useStore } from '@/context/StoreContext'
 import Image from 'next/image'
 import Link from 'next/link'
-import {
-    AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger,
+import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
 
 interface WishlistItemProps {
@@ -48,7 +47,7 @@ const WishlistItem = memo(({ item, selectedItems, handleSelectItem }: WishlistIt
 WishlistItem.displayName = 'WishlistItem'
 
 
-const Wishlist = () => {
+export default function Wishlist() {
     const { addToCart, removeFromWishlist, wishlistItems } = useStore()
     const [selectedItems, setSelectedItems] = useState<number[]>([])
     const allSelected = wishlistItems.length > 0 && selectedItems.length === wishlistItems.length
@@ -150,5 +149,3 @@ const Wishlist = () => {
         </Suspense>
     )
 }
-
-export default Wishlist

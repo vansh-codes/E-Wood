@@ -12,7 +12,7 @@ import { FaCreditCard, FaMoneyBillWave } from 'react-icons/fa'
 import { BsBank } from 'react-icons/bs'
 import { SiPaytm } from 'react-icons/si'
 
-export default function PaymentPage() {
+export default function Payment() {
   const [paymentMethod, setPaymentMethod] = useState('card')
   const [cardNumber, setCardNumber] = useState('')
   const [expiryDate, setExpiryDate] = useState('')

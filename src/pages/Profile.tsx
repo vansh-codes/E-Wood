@@ -51,7 +51,7 @@ const passwordFormSchema = z.object({
 type ProfileFormValues = z.infer<typeof profileFormSchema>
 type PasswordFormValues = z.infer<typeof passwordFormSchema>
 
-const Profile = () => {
+export default function Profile() {
   const [isLoading, setIsLoading] = useState(false)
   const [profileImage, setProfileImage] = useState<File | null>(null)
   const [user, setUser] = useState({
@@ -281,5 +281,3 @@ const Profile = () => {
     </div>
   )
 }
-
-export default Profile

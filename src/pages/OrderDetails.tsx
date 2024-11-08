@@ -35,7 +35,7 @@ type orderDetail = {
     estimatedDelivery: string
 }
 
-export default function OrderDetailsPage({ params }: { params: { id: string } }) {
+export default function OrderDetails({ params }: { params: { id: string } }) {
   const router = useRouter()
   const [order, setOrder] = useState<orderDetail | null>(null)
 

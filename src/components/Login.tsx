@@ -11,7 +11,7 @@ import { useStore } from '@/context/StoreContext'
 import { FcGoogle } from 'react-icons/fc'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
-const LoginPage: React.FC = () => {
+export default function LoginPage() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
@@ -102,5 +102,3 @@ const LoginPage: React.FC = () => {
     </div>
   )
 }
-
-export default LoginPage

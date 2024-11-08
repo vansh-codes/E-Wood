@@ -1,5 +1,5 @@
 'use strict'
-import PaymentPage from '@/pages/Payment'
+import Payment from '@/pages/Payment'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -71,6 +71,6 @@ export const metadata: Metadata = {
 
 export default function page() {
   return (
-    <PaymentPage />
+    <Payment />
   )
 }

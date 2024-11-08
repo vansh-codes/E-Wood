@@ -69,9 +69,8 @@ export const metadata: Metadata = {
   category: 'technology',
 }
 
-
 export default function page() {
-    return (
-        <Wishlist />
-    )
+  return (
+    <Wishlist />
+  )
 }

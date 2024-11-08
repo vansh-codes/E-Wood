@@ -12,7 +12,7 @@ function generateOrderId() {
   return 'ord' + String(randomNum).padStart(3, '0');
 }
 
-export default function OrderConfirmationPage() {
+export default function OrderConfirmation() {
   const [orderId, setOrderId] = useState('')
 
   useEffect(() => {

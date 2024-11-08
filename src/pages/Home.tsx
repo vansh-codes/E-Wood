@@ -14,7 +14,7 @@ import GridPattern from "@/components/ui/grid-pattern";
 import WordPullUp from "@/components/ui/word-pull-up";
 import Autoplay from "embla-carousel-autoplay"
 import productsData from '@/data/products.json'
-import { Testimonials } from "@/components/Testimonals"
+import Testimonials from "@/components/Testimonals"
 import { cn } from "@/lib/utils";
 
 const AnimatedSection = ({ children }: { children: React.ReactNode }) => {
@@ -58,7 +58,7 @@ const AnimatedSection = ({ children }: { children: React.ReactNode }) => {
   )
 }
 
-export default function HomePage() {
+export default function Home() {
   const featuredProducts = productsData.products.filter(product => product.featured)
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [scrollY, setScrollY] = useState(0)

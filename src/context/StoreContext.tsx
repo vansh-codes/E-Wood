@@ -9,7 +9,7 @@ const StoreContext = createContext<ContextProps | undefined>(undefined);
 export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const [cartItems, setCartItems] = useState<Product[]>([]);
     const [wishlistItems, setWishlistItems] = useState<Product[]>([]);
-    const [loggedIn, setLoggedIn] = useState(true);
+    const [loggedIn, setLoggedIn] = useState(false);
 
     // Handlers for cart and wishlist actions
     const addToCart = (item: Product) => setCartItems((prev) => {
@@ -52,7 +52,22 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
 // Custom hook for accessing the Store context
 export const useStore = () => {
     const context = useContext(StoreContext);
-    console.log("context: ",context); // This will log `undefined` if outside of provider
-    if (!context) throw new Error("useStore must be used within a StoreProvider");
+    // console.log("context: ",context); // This will log `undefined` if outside of provider
+    // if (!context) throw new Error("useStore must be used within a StoreProvider");
+    if (!context) {
+        // console.warn("useStore was called outside of a StoreProvider. Returning default values.");
+        return {
+            cartItems: [],
+            wishlistItems: [],
+            addToCart: () => {},
+            removeFromCart: () => {},
+            addToWishlist: () => {},
+            removeFromWishlist: () => {},
+            cartCount: 0,
+            wishlistCount: 0,
+            loggedIn: false,
+            setLogin: () => {},
+        }; // Return default values
+    }
     return context;
 };

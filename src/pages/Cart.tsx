@@ -12,7 +12,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from "@/components/ui/alert-dialog"
 //TODO: MAKE THIS PAGE RESPONSIVE AND FIX ADD TO WISHLIST ALIGNMENT ISSUE
 
-const Cart = () => {
+export default function Cart() {
     const { addToWishlist, removeFromCart, cartItems, addToCart } = useStore();
 
     const updateQuantity = useCallback((id: number, newQuantity: number) => {
@@ -148,5 +148,3 @@ const Cart = () => {
         </div>
     );
 };
-
-export default Cart;

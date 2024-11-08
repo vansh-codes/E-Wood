@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label"
 import { Switch } from "@/components/ui/switch"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
-const Settings = () => {
+export default function Settings() {
   const [notifications, setNotifications] = useState(true)
   const [newsletter, setNewsletter] = useState(true)
   const [language, setLanguage] = useState('english')
@@ -79,5 +79,3 @@ const Settings = () => {
     </div>
   )
 }
-
-export default Settings

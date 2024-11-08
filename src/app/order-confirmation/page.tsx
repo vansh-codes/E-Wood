@@ -1,5 +1,5 @@
 'use strict'
-import OrderConfirmationPage from "@/pages/OrderConfirmation"
+import OrderConfirmation from "@/pages/OrderConfirmation"
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -72,6 +72,6 @@ export const metadata: Metadata = {
 
 export default function page() {
   return (
-    <OrderConfirmationPage/>
+    <OrderConfirmation/>
   )
 }

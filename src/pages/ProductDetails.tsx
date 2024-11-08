@@ -19,16 +19,15 @@ export default function ProductDetails({ params }: { params: { id: string } }) {
   const [product, setProduct] = useState<Product | null>(null)
   const { addToCart, addToWishlist, removeFromCart, removeFromWishlist, cartItems, wishlistItems } = useStore()
   const [loading, setLoading] = useState(true)
-  const [id] = useState(params.id)
   const [api, setApi] = useState<CarouselApi>()
   const [current, setCurrent] = useState(1)
 
   useEffect(() => {
-    const productId = parseInt(id || '0', 10)
-    const foundProduct = productsData.products.find(p => p.id === productId)
+    const productId = parseInt(params.id || '0', 10)
+    const foundProduct = productsData.products.find(p => p.id === productId) || null
     setProduct(foundProduct || null)
     setLoading(false)
-  }, [id])
+  }, [params.id])
 
   useEffect(() => {
     if (!api) {

@@ -3,7 +3,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Toaster } from "@/components/ui/toaster"
 
-export default function PrivacyPolicy() {
+export default function Privacy() {
 
   return (
     <div className="container mx-auto px-4 py-8">

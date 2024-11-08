@@ -30,7 +30,7 @@ const ReviewCard = ({ img, name, username, body }: { img: string; name: string; 
     );
 };
 
-export function Testimonials() {
+export default function Testimonials() {
     return (
         <div className="relative flex h-[500px] w-3/4 flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
             <Marquee pauseOnHover className="[--duration:20s]">

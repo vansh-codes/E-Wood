@@ -42,7 +42,7 @@ const trackingSteps = [
   { id: 4, title: 'Delivered', icon: Check },
 ]
 
-export default function OrderTrackingPage({ params }: { params: { id: string } }) {
+export default function Tracking({ params }: { params: { id: string } }) {
   const router = useRouter()
   const [order, setOrder] = useState<OrderDetail | null>(null)
   const [loading, setLoading] = useState(true)

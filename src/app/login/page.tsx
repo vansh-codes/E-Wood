@@ -1,5 +1,5 @@
 'use strict'
-import LoginPage from '@/components/Login'
+import Login from '@/components/Login'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -71,6 +71,6 @@ export const metadata: Metadata = {
 
 export default function page() {
   return (
-    <LoginPage />
+    <Login />
   )
 }

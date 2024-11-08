@@ -5,7 +5,7 @@ import { useStore } from '@/context/StoreContext'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
-const Logout = () => {
+export default function Logout () {
   const router = useRouter()
   const { setLogin } = useStore()
 
@@ -37,5 +37,3 @@ const Logout = () => {
     </div>
   )
 }
-
-export default Logout

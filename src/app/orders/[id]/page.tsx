@@ -1,5 +1,5 @@
 'use strict'
-import OrderDetailsPage from '@/pages/OrderDetails'
+import OrderDetails from '@/pages/OrderDetails'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -71,6 +71,6 @@ export const metadata: Metadata = {
 
 export default function page({params}:{params:{id: string}}) {
   return (
-    <OrderDetailsPage params={params}/>
+    <OrderDetails params={params}/>
   )
 }

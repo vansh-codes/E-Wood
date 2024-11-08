@@ -1,5 +1,6 @@
 'use strict'
-import OrderTrackingPage from "@/pages/Tracking"
+import { Suspense } from "react"
+import Tracking from "@/pages/Tracking"
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -37,12 +38,12 @@ export const metadata: Metadata = {
     description: 'Explore our wide range of high-quality wood products. Find the perfect wood for your next project.',
     images: [
       {
-      url: '/404.svg',
-      width: 800,
-      height: 600,
-      alt: '404 not found'
+        url: '/404.svg',
+        width: 800,
+        height: 600,
+        alt: '404 not found'
       }
-  ], // The image URL for the Twitter card
+    ], // The image URL for the Twitter card
   },
   robots: {
     index: false,
@@ -69,8 +70,10 @@ export const metadata: Metadata = {
   category: 'technology',
 }
 
-export default function page({params}: {params: {id: string}}) {
+export default function page({ params }: { params: { id: string } }) {
   return (
-    <OrderTrackingPage params={params}/>
+    <Suspense fallback={<div>Loading...</div>} >
+      <Tracking params={params} />
+    </Suspense>
   )
 }
