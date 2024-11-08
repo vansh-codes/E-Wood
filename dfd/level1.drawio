@@ -1,0 +1,101 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0" version="24.8.4">
+  <diagram name="Page-1" id="WipvAA16gX4GXz1ENiFk">
+    <mxGraphModel dx="2004" dy="1130" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Dxqt0a_XN8vpvkj8ZIrD-1" value="User" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="581" y="20" width="93" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="Dxqt0a_XN8vpvkj8ZIrD-2" value="Product Database" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="282" y="239" width="185" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="Dxqt0a_XN8vpvkj8ZIrD-3" value="Order Management" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="530" y="239" width="196" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="Dxqt0a_XN8vpvkj8ZIrD-4" value="Cart Management" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="790" y="239" width="186" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="Dxqt0a_XN8vpvkj8ZIrD-5" value="Wishlist Management" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1026" y="239" width="212" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="Dxqt0a_XN8vpvkj8ZIrD-6" value="Settings Management" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="20" y="141" width="213" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="Dxqt0a_XN8vpvkj8ZIrD-7" value="Product Browsing" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="283" y="141" width="183" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="Dxqt0a_XN8vpvkj8ZIrD-8" value="Wishlist Management" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1026" y="141" width="212" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="Dxqt0a_XN8vpvkj8ZIrD-9" value="Cart Management" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="790" y="141" width="186" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="Dxqt0a_XN8vpvkj8ZIrD-10" value="Checkout and Payment" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="516" y="141" width="224" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="Dxqt0a_XN8vpvkj8ZIrD-11" value="Order Tracking" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="545" y="360" width="165" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="Dxqt0a_XN8vpvkj8ZIrD-12" value="Browse" style="curved=1;startArrow=none;endArrow=block;exitX=0.01;exitY=0.73;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="Dxqt0a_XN8vpvkj8ZIrD-1" target="Dxqt0a_XN8vpvkj8ZIrD-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="374" y="105" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dxqt0a_XN8vpvkj8ZIrD-13" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="Dxqt0a_XN8vpvkj8ZIrD-7" target="Dxqt0a_XN8vpvkj8ZIrD-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dxqt0a_XN8vpvkj8ZIrD-14" value="Add to Wishlist" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.62;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="Dxqt0a_XN8vpvkj8ZIrD-1" target="Dxqt0a_XN8vpvkj8ZIrD-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1132" y="105" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dxqt0a_XN8vpvkj8ZIrD-15" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="Dxqt0a_XN8vpvkj8ZIrD-8" target="Dxqt0a_XN8vpvkj8ZIrD-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dxqt0a_XN8vpvkj8ZIrD-16" value="Add to Cart" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.73;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="Dxqt0a_XN8vpvkj8ZIrD-1" target="Dxqt0a_XN8vpvkj8ZIrD-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="883" y="105" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dxqt0a_XN8vpvkj8ZIrD-17" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="Dxqt0a_XN8vpvkj8ZIrD-9" target="Dxqt0a_XN8vpvkj8ZIrD-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dxqt0a_XN8vpvkj8ZIrD-18" value="Checkout" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1.01;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="Dxqt0a_XN8vpvkj8ZIrD-1" target="Dxqt0a_XN8vpvkj8ZIrD-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dxqt0a_XN8vpvkj8ZIrD-19" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="Dxqt0a_XN8vpvkj8ZIrD-10" target="Dxqt0a_XN8vpvkj8ZIrD-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dxqt0a_XN8vpvkj8ZIrD-20" value="Update" style="curved=1;startArrow=none;endArrow=block;exitX=0.01;exitY=0.62;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="Dxqt0a_XN8vpvkj8ZIrD-1" target="Dxqt0a_XN8vpvkj8ZIrD-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="126" y="105" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dxqt0a_XN8vpvkj8ZIrD-21" value="Track" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1.01;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="Dxqt0a_XN8vpvkj8ZIrD-3" target="Dxqt0a_XN8vpvkj8ZIrD-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
