@@ -8,7 +8,7 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/*.js$', '/*.json$', '/static/', '/build/'],
     },
-    sitemap: 'http://localhost:3000/sitemap.xml',
+    sitemap: 'https://e-wood.vercel.app/sitemap.xml',
   }
 }
 
@@ -30,7 +30,7 @@ Disallow: /static/
 Disallow: /build/
 
 # Specify the location of your XML sitemap
-Sitemap: https://ai-text-summarizer-app-gold.vercel.app/sitemap.xml
+Sitemap: https://e-wood.vercel.app/sitemap.xml
 
 # Specify the location of your Progressive Web App manifest
 Allow: /manifest.json */

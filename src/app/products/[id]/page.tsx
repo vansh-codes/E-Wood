@@ -21,12 +21,12 @@ export async function generateMetadata(
     description: 'Explore our wide range of high-quality wood products. Find the perfect wood for your next project.',
     applicationName: '', //application name
     referrer: 'origin-when-cross-origin',
-    keywords: ['Next.js', 'React', 'JavaScript'],
+    keywords: ['E-wood', 'ecommerce', 'wood', 'wood-trading', 'wood-products', 'wood-supplier', 'saw-mill', 'raw-wood', 'wood-processing', 'wood-manufacturing', 'wood-furniture', 'wood-construction', 'wood-crafts', 'wood-arts', 'wood-architecture', 'wood-design', 'wood-technology', 'wood-education', 'wood-research', 'wood-innovation', 'wood-consulting', 'wood-services', 'wood-projects', 'wood-investment', 'wood-market', 'wood-industry', 'wood-business', 'wood-economy', 'wood-environment', 'wood-sustainability', 'wood-ecology', 'wood-ethics', 'wood-culture', 'wood-history', 'wood-heritage', 'wood-tradition'],
     openGraph: {
       title: '404 - Not Found',
       description: 'Explore our wide range of high-quality wood products. Find the perfect wood for your next project.',
-      url: 'https://yourwebsite.com/404',
-      siteName: 'Next.js',
+      url: 'https://e-wood.vercel.app/products/',
+      siteName: 'E-Wood',
       type: 'website',
       images: [
         {
