@@ -3,7 +3,8 @@
 import React, { useState } from 'react'
 import { Share2 } from 'lucide-react'
 import { Button } from "@/components/ui/button"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger,
+import {
+  DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { toast } from "@/hooks/use-toast"
 
@@ -17,7 +18,7 @@ const ShareButton: React.FC<ShareButtonProps> = ({ url, title }) => {
 
   const handleShare = async (platform: string) => {
     setIsOpen(false)
-    
+
     if (navigator.share && platform === 'native') {
       try {
         await navigator.share({ url, title })
@@ -59,11 +60,9 @@ const ShareButton: React.FC<ShareButtonProps> = ({ url, title }) => {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align='end'>
-        {navigator.share && (
-          <DropdownMenuItem onSelect={() => handleShare('native')} className="cursor-pointer">
-            Share
-          </DropdownMenuItem>
-        )}
+        <DropdownMenuItem onSelect={() => handleShare('native')} className="cursor-pointer">
+          Share
+        </DropdownMenuItem>
         <DropdownMenuItem onSelect={() => handleShare('facebook')} className="cursor-pointer">
           Facebook
         </DropdownMenuItem>
