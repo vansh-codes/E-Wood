@@ -79,7 +79,7 @@ const Profile = () => {
   const onProfileSubmit = (data: ProfileFormValues) => {
     setIsLoading(true)
     // api call to update user profile
-    console.log(data)
+    // console.log(data)
     setTimeout(() => {
       setUser(prevUser => ({ ...prevUser, ...data }))
       setIsLoading(false)

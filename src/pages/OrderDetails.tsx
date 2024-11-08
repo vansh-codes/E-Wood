@@ -41,7 +41,7 @@ export default function OrderDetailsPage({ params }: { params: { id: string } })
 
   useEffect(() => {
     const data = orderDetails.find((order) => order.id === params.id) || null
-    console.log(data)
+    // console.log(data)
     setOrder(data)
   }, [params.id])
 

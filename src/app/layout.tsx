@@ -1,7 +1,7 @@
 'use strict'
+import "./globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { StoreProvider } from "@/context/StoreContext";
 import { Header } from "@/components/Header";

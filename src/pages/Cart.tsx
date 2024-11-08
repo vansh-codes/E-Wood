@@ -110,7 +110,7 @@ const Cart = () => {
                                         <TableCell>₹{(item.price * item.quantity).toFixed(2)}</TableCell>
                                         <TableCell className="flex flex-col items-start space-y-2">
                                             <AlertDialog>
-                                                <AlertDialogTrigger>
+                                                <AlertDialogTrigger asChild>
                                                     <Button variant="destructive" size="sm">
                                                         Remove
                                                     </Button>

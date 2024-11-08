@@ -124,7 +124,7 @@ const Wishlist = () => {
                                     Add Selected to Cart
                                 </Button>
                                 <AlertDialog>
-                                    <AlertDialogTrigger>
+                                    <AlertDialogTrigger asChild>
                                         <Button variant="destructive" disabled={selectedItems.length === 0}>
                                             Remove Selected
                                         </Button>

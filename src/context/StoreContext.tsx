@@ -52,6 +52,7 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
 // Custom hook for accessing the Store context
 export const useStore = () => {
     const context = useContext(StoreContext);
+    console.log("context: ",context); // This will log `undefined` if outside of provider
     if (!context) throw new Error("useStore must be used within a StoreProvider");
     return context;
 };
