@@ -58,7 +58,7 @@ export default function OrderTrackingPage({ params }: { params: { id: string } }
         }
         const data: OrderDetail = response
         setOrder(data)
-      } catch (err) {
+      } catch {
         setError('An error occurred while fetching order details')
       } finally {
         setLoading(false)

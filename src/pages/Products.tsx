@@ -410,7 +410,7 @@ export default function Products() {
 
         {!loading && visibleProducts >= productsData.products.length && filteredProducts.length !== 0 && (
           <div className="text-center text-gray-500 dark:text-gray-400 mt-8">
-            You've reached the end of the products!
+            You&apos;ve reached the end of the products!
           </div>
         )}
       </div>

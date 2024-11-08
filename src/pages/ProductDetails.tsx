@@ -19,7 +19,7 @@ export default function ProductDetails({ params }: { params: { id: string } }) {
   const [product, setProduct] = useState<Product | null>(null)
   const { addToCart, addToWishlist, removeFromCart, removeFromWishlist, cartItems, wishlistItems } = useStore()
   const [loading, setLoading] = useState(true)
-  const [id, setId] = useState(params.id)
+  const [id] = useState(params.id)
   const [api, setApi] = useState<CarouselApi>()
   const [current, setCurrent] = useState(1)
 

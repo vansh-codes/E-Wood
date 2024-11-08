@@ -2,7 +2,7 @@ import React from 'react'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger,
 } from "@/components/ui/accordion"
 import faqData from '@/data/faq'
-import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card"
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 
 export default function FAQ() {
   return (

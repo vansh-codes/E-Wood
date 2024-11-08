@@ -14,7 +14,7 @@ interface SearchCategoryProps {
     setSelectedCategory: React.Dispatch<React.SetStateAction<string>>;
 }
 
-export function SearchCategory({ selectedCategory, setSelectedCategory }: SearchCategoryProps) {
+export function SearchCategory({ selectedCategory }: SearchCategoryProps) {
     const [open, setOpen] = useState(false)
     const router = useRouter()
 

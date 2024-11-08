@@ -8,7 +8,8 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { useStore } from '@/context/StoreContext'
 import Image from 'next/image'
 import Link from 'next/link'
-import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger,
+import {
+    AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
 
 interface WishlistItemProps {
@@ -43,6 +44,8 @@ const WishlistItem = memo(({ item, selectedItems, handleSelectItem }: WishlistIt
         <TableCell>₹{item.price.toFixed(2)}</TableCell>
     </TableRow>
 ))
+
+WishlistItem.displayName = 'WishlistItem'
 
 
 const Wishlist = () => {

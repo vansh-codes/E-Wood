@@ -1,6 +1,6 @@
 'use strict'
 import ProductDetails from '@/pages/ProductDetails'
-import type { Metadata, ResolvingMetadata } from 'next'
+import type { Metadata } from 'next'
 import productsData from '@/data/products.json'
 
 type Props = {
@@ -8,9 +8,7 @@ type Props = {
 }
  
 export async function generateMetadata(
-  { params }: Props,
-  parent: ResolvingMetadata
-): Promise<Metadata> {
+  { params }: Props): Promise<Metadata> {
   // read route params
   const id = (await params).id
  

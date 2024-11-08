@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue,
 } from "@/components/ui/select"
-import { ChevronDown, ChevronUp, Copy, MoreHorizontal, Search,
+import { ChevronDown, ChevronUp, Copy, MoreHorizontal,
 } from "lucide-react"
 import { format, subMonths, isAfter } from 'date-fns'
 import { orderDetails as allOrders } from '@/data/orders'

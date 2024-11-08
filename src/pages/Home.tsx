@@ -60,6 +60,7 @@ const AnimatedSection = ({ children }: { children: React.ReactNode }) => {
 
 export default function HomePage() {
   const featuredProducts = productsData.products.filter(product => product.featured)
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [scrollY, setScrollY] = useState(0)
 
   useEffect(() => {

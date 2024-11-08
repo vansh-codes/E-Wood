@@ -47,7 +47,7 @@ export default function Terms() {
               <AccordionItem value="item-2">
                 <AccordionTrigger>2. Use of Service</AccordionTrigger>
                 <AccordionContent>
-                  <p className="mb-2">You agree to use our platform only for lawful purposes and in a way that does not infringe the rights of, restrict or inhibit anyone else's use and enjoyment of the website.</p>
+                  <p className="mb-2">You agree to use our platform only for lawful purposes and in a way that does not infringe the rights of, restrict or inhibit anyone else&apos;s use and enjoyment of the website.</p>
                   <p className="mb-2">Prohibited activities include, but are not limited to:</p>
                   <ul className="list-disc pl-6 mb-2">
                     <li>Conducting any illegal activity or soliciting the performance of any illegal activity</li>
