@@ -51,7 +51,7 @@ export default function OrderTrackingPage({ params }: { params: { id: string } }
   useEffect(() => {
     const fetchOrderDetails = () => {
       try {
-        // Replace this with your actual API call
+        // Replace this with actual API call
         const response = orderDetails.find((order) => order.id === params.id) || null
         if (!response) {
           throw new Error('Failed to fetch order details')
