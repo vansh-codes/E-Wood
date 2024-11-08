@@ -58,12 +58,12 @@ export const metadata: Metadata = {
   assets: ['https://nextjs.org/assets'],  // url for all assets
   category: 'technology',
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
     nocache: true,
     googleBot: {
       index: true,
-      follow: false,
+      follow: true,
       noimageindex: true,
       'max-video-preview': -1,
       'max-image-preview': 'large',

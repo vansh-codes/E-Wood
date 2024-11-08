@@ -23,17 +23,17 @@ export async function generateMetadata(
     referrer: 'origin-when-cross-origin',
     keywords: ['E-wood', 'ecommerce', 'wood', 'wood-trading', 'wood-products', 'wood-supplier', 'saw-mill', 'raw-wood', 'wood-processing', 'wood-manufacturing', 'wood-furniture', 'wood-construction', 'wood-crafts', 'wood-arts', 'wood-architecture', 'wood-design', 'wood-technology', 'wood-education', 'wood-research', 'wood-innovation', 'wood-consulting', 'wood-services', 'wood-projects', 'wood-investment', 'wood-market', 'wood-industry', 'wood-business', 'wood-economy', 'wood-environment', 'wood-sustainability', 'wood-ecology', 'wood-ethics', 'wood-culture', 'wood-history', 'wood-heritage', 'wood-tradition'],
     openGraph: {
-      title: '404 - Not Found',
-      description: 'Explore our wide range of high-quality wood products. Find the perfect wood for your next project.',
-      url: 'https://e-wood.vercel.app/products/',
+      title: product ? product.name : 'Products',
+      description: product ? product.description : 'Explore our wide range of high-quality wood products. Find the perfect wood for your next project.',
+      url: 'https://e-wood.vercel.app/products',
       siteName: 'E-Wood',
       type: 'website',
       images: [
         {
-          url: '/404.svg',  /* sharing card image url/path, must be absolute URL*/
+          url: product ? product.image[0] : '/404.svg',  /* sharing card image url/path, must be absolute URL*/
           width: 800,
           height: 600,
-          alt: '404 Not Found',
+          alt: product ? product.name : 'Products',
         },
       ],
       videos: [
@@ -47,24 +47,24 @@ export async function generateMetadata(
     twitter: {
       card: 'summary_large_image',
       site: '@yourwebsite', // The Twitter username of the website or content creator
-      title: '404 - Not Found',
-      description: 'Explore our wide range of high-quality wood products. Find the perfect wood for your next project.',
+      title: product ? product.name : 'Products',
+      description: product ? product.description : 'Explore our wide range of high-quality wood products. Find the perfect wood for your next project.',
       images: [
         {
-          url: '/404.svg',
+          url: product ? product.image[0] : '/404.svg',
           width: 800,
           height: 600,
-          alt: '404 not found'
+          alt: product ? product.name : 'Products',
         }
       ], // The image URL for the Twitter card
     },
     robots: {
-      index: false,
-      follow: false,
+      index: true,
+      follow: true,
       nocache: true,
       googleBot: {
         index: true,
-        follow: false,
+        follow: true,
         noimageindex: true,
         'max-video-preview': -1,
         'max-image-preview': 'large',
