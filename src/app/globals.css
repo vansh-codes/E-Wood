@@ -41,6 +41,7 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
@@ -73,7 +74,34 @@ body {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 }
+
+
+/* Style scrollbar for light mode */
+/* body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--foreground));
+  border-radius: 10px;
+  border: 3px solid hsl(var(--background));
+}
+
+body.dark::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+body.dark::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--foreground));
+  border-radius: 10px;
+  border: 3px solid hsl(var(--background));
+} */
