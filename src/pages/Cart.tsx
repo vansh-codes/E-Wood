@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useCallback, useMemo } from 'react';
+import { useCallback, useMemo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useStore } from '@/context/StoreContext';
@@ -13,20 +13,19 @@ import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, 
 //TODO: MAKE THIS PAGE RESPONSIVE AND FIX ADD TO WISHLIST ALIGNMENT ISSUE
 
 const Cart = () => {
-    const { addToWishlist, removeFromCart, cartItems } = useStore();
-    const [cart, setCart] = useState(cartItems);
+    const { addToWishlist, removeFromCart, cartItems, addToCart } = useStore();
 
     const updateQuantity = useCallback((id: number, newQuantity: number) => {
         if (isNaN(newQuantity) || newQuantity < 1) return;
-        setCart(prevCart =>
-            prevCart.map(item => (item.id === id ? { ...item, quantity: newQuantity } : item))
-        );
-    }, []);
+
+        const item = cartItems.find(item => item.id === id);
+        if (item) {
+            removeFromCart(id); // Remove existing item
+            addToCart({ ...item, quantity: newQuantity }); // Add with updated quantity
+        }
+    }, [cartItems, addToCart, removeFromCart]);
 
     const removeItem = useCallback((id: number) => {
-        setCart(prevCart =>
-            prevCart.filter(item => item.id !== id)
-        );
         removeFromCart(id);
     }, [removeFromCart]);
 
@@ -36,13 +35,13 @@ const Cart = () => {
     }, [addToWishlist, removeItem]);
 
     const total = useMemo(
-        () => cart.reduce((sum, item) => sum + item.price * item.quantity, 0),
-        [cart]
+        () => cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0),
+        [cartItems]
     );
 
     return (
         <div className="container mx-auto px-4 py-8">
-            {cart.length === 0 ? (
+            {cartItems.length === 0 ? (
                 <Card>
                     <CardHeader>
                         <CardTitle className="text-2xl font-bold">Shopping Cart</CardTitle>
@@ -79,7 +78,7 @@ const Cart = () => {
                                 </TableRow>
                             </TableHeader>
                             <TableBody>
-                                {cart.map(item => (
+                                {cartItems.map(item => (
                                     <TableRow key={item.id}>
                                         <TableCell>
                                             <Link href={`/products/${item.id}`}>
