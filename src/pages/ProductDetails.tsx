@@ -2,7 +2,7 @@
 
 import { Suspense, useState, useEffect } from 'react'
 import Link from 'next/link'
-import { ShoppingCart, Heart, ArrowLeft, Star } from 'lucide-react'
+import { ShoppingCart, Heart, ArrowLeft, Star, Loader2 } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -58,7 +58,9 @@ export default function ProductDetails({ params }: { params: { id: string } }) {
   const isInWishlist = (productId: number) => (wishlistItems ?? []).some(item => item.id === productId)
 
   if (loading) {
-    return <div className="min-h-screen p-8 text-center">Loading...</div>
+    return <div className="flex items-center justify-center min-h-screen">
+      <Loader2 className="w-16 h-16 animate-spin" />
+    </div>
   }
 
   if (!product) {
@@ -68,7 +70,11 @@ export default function ProductDetails({ params }: { params: { id: string } }) {
   const displayImages = product.image || ["/hardwood.png", "/softwood.png", "/exotic.png"]
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={
+      <div className="flex items-center justify-center min-h-screen">
+        <Loader2 className="w-24 h-24 animate-spin" />
+      </div>
+    }>
       <div className="min-h-screen p-8">
         <Link href="/products" className="mb-4 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">
           <Button variant="ghost">
@@ -179,6 +185,11 @@ export default function ProductDetails({ params }: { params: { id: string } }) {
             <TabsContent value="reviews">
               <Card>
                 <CardContent className="pt-6">
+                  {product.reviews.length == 0 && (
+                    <div className="flex justify-center items-center mb-4 pb-4 border-b last:border-b-0">
+                      <p className="text-2xl text-gray-600 dark:text-gray-300 text-center">No reviews yet</p>
+                    </div>
+                  )}
                   {product.reviews.map((review) => (
                     <div key={review.id} className="mb-4 pb-4 border-b last:border-b-0">
                       <div className="flex items-center mb-1">

@@ -2,6 +2,7 @@
 import { Suspense } from 'react';
 import Products from '@/pages/Products'
 import type { Metadata } from 'next'
+import { Loader2 } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Products',
@@ -72,7 +73,10 @@ export const metadata: Metadata = {
 
 export default function page() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={
+      <div className="flex items-center justify-center min-h-screen">
+        <Loader2 className="w-24 h-24 animate-spin" />
+      </div>}>
       <Products />
     </Suspense>
   )

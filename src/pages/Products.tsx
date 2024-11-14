@@ -2,7 +2,7 @@
 
 import { Suspense, useState, useEffect, useMemo, useCallback } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
-import { ShoppingCart, Heart, Star, Filter, X } from 'lucide-react'
+import { ShoppingCart, Heart, Star, Filter, X, Loader2 } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -196,7 +196,11 @@ export default function Products() {
   }
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={
+    <div className="flex items-center justify-center min-h-screen">
+      <Loader2 className="w-24 h-24 animate-spin" />
+    </div>
+  }>
       {/* <div className="min-h-screen bg-[url('/wood-texture-light.png')] dark:bg-[url('/wood-texture-dark.png')] bg-contain"> */}
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">

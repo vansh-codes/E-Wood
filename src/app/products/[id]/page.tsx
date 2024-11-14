@@ -3,6 +3,7 @@ import { Suspense } from 'react';
 import ProductDetails from '@/pages/ProductDetails'
 import type { Metadata } from 'next'
 import productsData from '@/data/products.json'
+import { Loader2 } from 'lucide-react'
 
 type Props = {
   params: { id: string }
@@ -86,7 +87,11 @@ export async function generateMetadata(
 
 export default function page({ params }: { params: { id: string } }) {
   return (
-    <Suspense fallback={<div className='text-red-500'>Loading...</div>}>
+    <Suspense fallback={
+    <div className="flex items-center justify-center min-h-screen">
+      <Loader2 className="w-24 h-24 animate-spin" />
+    </div>}
+    >
       <ProductDetails params={params} />
     </Suspense>
   )

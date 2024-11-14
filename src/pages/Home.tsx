@@ -74,14 +74,14 @@ export default function Home() {
     <div className="min-h-screen" >
       {/* <Parallax bgImage="/hero-wood-background.png" strength={500}> */}
       <Parallax strength={500}>
-        <div className="h-screen flex items-center justify-center">
+        <div className="h-screen flex items-center justify-center z-10">
           <div className="text-center">
               <WordPullUp
                 className="text-4xl font-bold mb-4 lg:text-7xl tracking-[-0.02em] text-black dark:text-white md:text-6xl md:leading-[5rem]"
                 words="Welcome to WoodTraders"
               />
             <motion.p
-              className="text-xl md:text-2xl mb-8"
+              className="text-xl md:text-2xl mb-8 z-10"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 1 }}
@@ -93,7 +93,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 1 }}
             >
-              <Button asChild size="lg" className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <Button asChild size="lg" className="shadow-lg hover:shadow-xl transition-shadow duration-300 z-100">
                 <Link href="/products">Shop Now</Link>
               </Button>
             </motion.div>
@@ -106,7 +106,7 @@ export default function Home() {
           y={-1}
           strokeDasharray={"4 2"}
           className={cn(
-            "[mask-image:radial-gradient(600px_circle_at_center,white,transparent)] dark:[mask-image:radial-gradient(600px_circle_at_center,black,transparent)]",
+            "[mask-image:radial-gradient(600px_circle_at_center,white,transparent)] -z-[1] dark:[mask-image:radial-gradient(600px_circle_at_center,black,transparent)]",
           )}
         />
       </Parallax>

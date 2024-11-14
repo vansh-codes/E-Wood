@@ -8,8 +8,10 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { useStore } from '@/context/StoreContext'
 import Image from 'next/image'
 import Link from 'next/link'
-import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger,
+import {
+    AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
+import { Loader2 } from 'lucide-react'
 
 interface WishlistItemProps {
     item: {
@@ -72,7 +74,9 @@ export default function Wishlist() {
     }
 
     return (
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div className="flex items-center justify-center min-h-screen">
+            <Loader2 className="w-24 h-24 animate-spin" />
+        </div>}>
             <div className="container mx-auto px-4 py-8">
                 {wishlistItems.length === 0 ? (
                     <Card>

@@ -12,8 +12,8 @@ import { FcGoogle } from 'react-icons/fc'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function LoginPage() {
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
+  const [email, setEmail] = useState('v@gmail.com')
+  const [password, setPassword] = useState('1234')
   const [error, setError] = useState('')
   const router = useRouter()
   const { setLogin } = useStore()

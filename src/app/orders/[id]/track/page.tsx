@@ -2,6 +2,7 @@
 import { Suspense } from "react"
 import Tracking from "@/pages/Tracking"
 import type { Metadata } from 'next'
+import { Loader2 } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Track Order',
@@ -72,7 +73,9 @@ export const metadata: Metadata = {
 
 export default function page({ params }: { params: { id: string } }) {
   return (
-    <Suspense fallback={<div>Loading...</div>} >
+    <Suspense fallback={<div className="flex items-center justify-center min-h-screen">
+      <Loader2 className="w-24 h-24 animate-spin" />
+    </div>} >
       <Tracking params={params} />
     </Suspense>
   )
