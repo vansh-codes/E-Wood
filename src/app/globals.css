@@ -9,7 +9,6 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
-    /* color: #19f719; */
   }
 }
 
@@ -40,6 +39,7 @@ body {
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+    --thumb: #e4e4e7;
   }
 
   .dark {
@@ -67,6 +67,7 @@ body {
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+    --thumb: #27272a;
   }
 }
 
@@ -82,8 +83,8 @@ body {
 
 
 /* Style scrollbar for light mode */
-/* body::-webkit-scrollbar {
-  width: 12px;
+body::-webkit-scrollbar {
+  width: 11px;
 }
 
 body::-webkit-scrollbar-track {
@@ -91,17 +92,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: hsl(var(--foreground));
+  background-color: var(--thumb);
   border-radius: 10px;
   border: 3px solid hsl(var(--background));
 }
-
-body.dark::-webkit-scrollbar-track {
-  background: hsl(var(--background));
-}
-
-body.dark::-webkit-scrollbar-thumb {
-  background-color: hsl(var(--foreground));
-  border-radius: 10px;
-  border: 3px solid hsl(var(--background));
-} */
