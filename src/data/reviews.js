@@ -20,7 +20,7 @@ const reviews = [
     {
         name: "Gopal",
         username: "@gopal",
-        body: "Good Quality",
+        body: "Good Quality Woods",
         img: "https://i.ytimg.com/vi/e64NxrfJl6g/hqdefault.jpg",
     },
     {
@@ -34,6 +34,12 @@ const reviews = [
         username: "@chhota_pandit",
         body: "I love the wood! Premium for furniture",
         img: "https://etvbharatimages.akamaized.net/etvbharat/prod-images/22-10-2024/22735040_rajpal.jpg",
+    },
+    {
+        name: "Pushpa",
+        username: "@jhukega_nahi",
+        body: "Tootega nhi saala",
+        img: "https://wallpapercave.com/wp/wp11717689.jpg",
     },
 ];
 
