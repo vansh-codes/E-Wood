@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import { useStore } from '@/context/StoreContext'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -15,6 +16,7 @@ export default function SignupPage() {
   const [confirmPassword, setConfirmPassword] = useState('')
   const [errors, setErrors] = useState<{[key: string]: string}>({})
   const router = useRouter()
+  const { setLogin } = useStore()
 
   const validateForm = () => {
     const newErrors: {[key: string]: string} = {}
@@ -37,7 +39,8 @@ export default function SignupPage() {
 
     // api call to create and store user
     // console.log('Signing up with:', { name, email, password })
-    router.push('/dashboard')
+    router.push('/')
+    setLogin(true)
   }
 
   return (
