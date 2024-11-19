@@ -6,7 +6,7 @@
             "category": "Hardwood",
             "price": 2400.0,
             "discount": 10,
-            "image": ["/hardwood.png", "/softwood.png", "/exotic.png"],
+            "image": ["/sheesham1.png", "/sheesham2.png", "/sheesham3.png"],
             "description": "Durable Sheesham wood logs, ideal for furniture, flooring, and decorative projects.",
             "specifications": {
                 "length": "2 meters",
@@ -39,7 +39,7 @@
             "category": "Hardwood",
             "price": 1400.0,
             "discount": 10,
-            "image": ["/hardwood.png", "/softwood.png", "/exotic.png"],
+            "image": ["/aam2.png", "/aam1.png", "/aam3.png", "/aam4.png", "/aam5.png"],
             "description": "Affordable Aam wood logs, ideal for lightweight furniture and DIY projects.",
             "specifications": {
                 "length": "1.8 meters",
@@ -59,7 +59,7 @@
             "category": "Hardwood",
             "price": 1200.0,
             "discount": 15,
-            "image": ["/hardwood.png", "/softwood.png", "/exotic.png"],
+            "image": ["/neem1.png", "/neem2.png", "/neem3.png", "/neem4.png"],
             "description": "Eco-friendly Neem wood with anti-termite properties, ideal for carving and small projects.",
             "specifications": {
                 "length": "1.5 meters",
@@ -69,8 +69,8 @@
             },
             "stock": 180,
             "quantity": 1,
-            "featured": true,
-            "rating": 4.5,
+            "featured": false,
+            "rating": 4.1,
             "reviews": [
                 {
                     "id": 1,
@@ -92,7 +92,7 @@
             "category": "Hardwood",
             "price": 1600.0,
             "discount": 12,
-            "image": ["/hardwood.png", "/softwood.png", "/exotic.png"],
+            "image": ["/jamun1.png", "/jamun2.png", "/jamun3.png", "/jamun4.png"],
             "description": "Strong Jamun wood logs, suitable for durable furniture and structural applications.",
             "specifications": {
                 "length": "2 meters",
@@ -110,9 +110,9 @@
             "id": 5,
             "name": "Babool Wood Logs",
             "category": "Hardwood",
-            "price": 1000.0,
+            "price": 800.0,
             "discount": 10,
-            "image": ["/hardwood.png", "/softwood.png", "/exotic.png"],
+            "image": ["/babool1.png", "/babool2.png", "/babool3.png", "/babool4.png"],
             "description": "Affordable Babool wood logs, ideal for basic furniture and utility purposes.",
             "specifications": {
                 "length": "1.8 meters",
@@ -130,9 +130,9 @@
             "id": 6,
             "name": "Mahogany Wood Logs",
             "category": "Hardwood",
-            "price": 2800.0,
+            "price": 599.0,
             "discount": 8,
-            "image": ["/hardwood.png", "/softwood.png", "/exotic.png"],
+            "image": ["/mahogany1.png", "/mahogany2.png", "/mahogany3.png"],
             "description": "Premium Mahogany wood logs, ideal for fine furniture and cabinetry.",
             "specifications": {
                 "length": "2.4 meters",
@@ -165,7 +165,7 @@
             "category": "Hardwood",
             "price": 2100.0,
             "discount": 5,
-            "image": ["/hardwood.png", "/softwood.png", "/exotic.png"],
+            "image": ["/acacia3.png", "/acacia1.png", "/acacia2.png"],
             "description": "High-strength Acacia wood logs, perfect for flooring and heavy-duty furniture.",
             "specifications": {
                 "length": "2 meters",
@@ -183,9 +183,9 @@
             "id": 8,
             "name": "Teak Wood Planks",
             "category": "Hardwood",
-            "price": 3400.0,
+            "price": 1399.0,
             "discount": 10,
-            "image": ["/hardwood.png", "/softwood.png", "/exotic.png"],
+            "image": ["/teak1.png", "/teak2.png", "/teak3.png"],
             "description": "Durable Teak wood planks, ideal for premium furniture and outdoor projects.",
             "specifications": {
                 "length": "2.5 meters",
@@ -204,8 +204,8 @@
             "name": "Rosewood Logs",
             "category": "Exotic Wood",
             "price": 12999.0,
-            "discount": 10,
-            "image": ["/exotic.png", "/hardwood.png", "/softwood.png"],
+            "discount": 20,
+            "image": ["/rosewood2.png", "/rosewood1.png", "/rosewood3.png"],
             "description": "Premium rosewood logs, known for their rich color and durability.",
             "specifications": {
                 "length": "1.2 meters",
@@ -237,8 +237,8 @@
             "name": "Pine Wood Panels",
             "category": "Softwood",
             "price": 2999.0,
-            "discount": 10,
-            "image": ["/softwood.png", "/hardwood.png", "/exotic.png"],
+            "discount": 15,
+            "image": ["/pinewood1.png", "/pinewood2.png", "/pinewood3.png"],
             "description": "Affordable pine panels suitable for interior design, wall paneling, and DIY projects.",
             "specifications": {
                 "length": "3 meters",
