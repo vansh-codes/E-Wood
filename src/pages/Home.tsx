@@ -62,11 +62,25 @@ export default function Home() {
   const featuredProducts = productsData.products.filter(product => product.featured)
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [scrollY, setScrollY] = useState(0)
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY)
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
+    const handleResize = () => setIsMobile(window.innerWidth < 420);
+
+    // Initialize state on mount
+    handleScroll();
+    handleResize();
+
+    // Attach event listeners
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup event listeners on unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
+    };
   }, [])
 
   return (
@@ -76,10 +90,10 @@ export default function Home() {
       <Parallax strength={500}>
         <div className="h-screen flex items-center justify-center z-10">
           <div className="text-center">
-              <WordPullUp
-                className="text-4xl font-bold mb-4 lg:text-7xl tracking-[-0.02em] text-black dark:text-white md:text-6xl md:leading-[5rem]"
-                words="Welcome to WoodTraders"
-              />
+            <WordPullUp
+              className="text-4xl font-bold mb-4 lg:text-7xl tracking-[-0.02em] text-black dark:text-white md:text-6xl md:leading-[5rem]"
+              words="Welcome to WoodTraders"
+            />
             <motion.p
               className="text-xl md:text-2xl mb-8 z-10"
               initial={{ opacity: 0 }}
@@ -122,12 +136,12 @@ export default function Home() {
               <CarouselContent>
                 {featuredProducts.map((product) => (
                   <CarouselItem key={product.id}>
-                    <Card className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm">
+                    <Card>
                       <CardHeader>
                         <CardTitle className="text-gray-900 dark:text-gray-100">{product.name}</CardTitle>
                       </CardHeader>
                       <CardContent>
-                        <Image src={product.image[0]} alt={product.name} width={500} height={300} className="w-full h-48 object-cover rounded-md" />
+                        <Image src={product.image[0]} alt={product.name} loading="lazy" width={500} height={300} className="w-full h-48 object-cover rounded-md" />
                         <p className="mt-2 text-sm text-muted-foreground dark:text-gray-400">{product.category}</p>
                         <p className="mt-1 text-lg font-bold">₹{product.price.toFixed(2)}</p>
                       </CardContent>
@@ -140,8 +154,8 @@ export default function Home() {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
+              {!isMobile && 
+              (<><CarouselPrevious /><CarouselNext /></>)}
             </Carousel>
           </section>
         </AnimatedSection>
@@ -156,7 +170,7 @@ export default function Home() {
                 { title: "Expertise", description: "Expert advice and customer support", icon: <Shield className="w-8 h-8" /> },
                 { title: "Value", description: "Competitive pricing and regular deals", icon: <Clock className="w-8 h-8" /> },
               ].map((item, index) => (
-                <Card key={index} className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm hover:shadow-lg transition-shadow duration-300">
+                <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>
                     <CardTitle className="text-gray-900 dark:text-gray-100 flex items-center">
                       <span className="mr-2">{item.icon}</span>
@@ -177,8 +191,8 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-900 dark:text-gray-100">Our Categories</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {productsData.categories.map((category, index) => (
-                <Card key={index} className="overflow-hidden bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm hover:shadow-lg transition-shadow duration-300">
-                  <Image src={category.image} alt={category.name} width={500} height={300} className="w-full h-48 object-cover" />
+                <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                  <Image src={category.image} alt={category.name} width={500} height={300} loading="lazy" className="w-full h-48 object-cover" />
                   <CardContent className="p-4">
                     <CardTitle className="text-gray-900 dark:text-gray-100">{category.name}</CardTitle>
                     <HoverCard>
@@ -210,7 +224,7 @@ export default function Home() {
                 { title: "Fast Delivery", description: "Quick and reliable delivery to your doorstep.", icon: <Truck className="w-8 h-8" /> },
                 { title: "Expert Consultation", description: "Get advice from our wood experts for your projects.", icon: <Shield className="w-8 h-8" /> },
               ].map((service, index) => (
-                <Card key={index} className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm hover:shadow-lg transition-shadow duration-300">
+                <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>
                     <CardTitle className="text-gray-900 dark:text-gray-100 flex items-center">
                       <span className="mr-2">{service.icon}</span>
