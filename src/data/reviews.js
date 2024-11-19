@@ -38,7 +38,7 @@ const reviews = [
     {
         name: "Pushpa",
         username: "@jhukega_nahi",
-        body: "Tootega nhi saala",
+        body: "Moodega nhi, Tootega nhi",
         img: "https://wallpapercave.com/wp/wp11717689.jpg",
     },
 ];

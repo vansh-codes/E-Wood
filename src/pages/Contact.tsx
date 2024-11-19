@@ -37,7 +37,7 @@ export default function Contact() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-700 dark:text-gray-300">123 Kachra Mahal, Bhoot Bangla k saamne wala road, Kachrapur, Kachradesh</p>
+                <p className="text-gray-700 dark:text-gray-300">Infront of Shri ji garden, Phase 2, Goverdhan Road, ABC, XYZ</p>
               </CardContent>
             </Card>
             
@@ -48,7 +48,7 @@ export default function Contact() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p  className="text-gray-700 dark:text-gray-300">+91 1234 567 890</p>
+                <p  className="text-gray-700 dark:text-gray-300">+91 98370 XXXXX</p>
               </CardContent>
             </Card>
             
@@ -79,7 +79,7 @@ export default function Contact() {
         <h2 className="text-2xl font-semibold mb-4 text-center">Visit Our Showroom</h2>
         <div className="aspect-w-16 aspect-h-9">
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0650485024716!2d-122.42111548441547!3d37.77492797975915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858087ebc3f2ef%3A0x92cafe6c5c480d0e!2sGolden%20Gate%20Park!5e0!3m2!1sen!2sus!4v1635786316890!5m2!1sen!2sus" 
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15445441.294633977!2d53.35784912109375!3d19.069905620644693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle%20maps%20ferrari%20showroom%20india!5e0!3m2!1sen!2sin!4v1732024651977!5m2!1sen!2sin" 
             width="100%" 
             height="450" 
             style={{border:0}} 
