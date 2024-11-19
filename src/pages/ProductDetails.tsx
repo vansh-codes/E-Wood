@@ -95,6 +95,7 @@ export default function ProductDetails({ params }: { params: { id: string } }) {
                         width={500}
                         height={500}
                         className="w-full h-[400px] object-cover"
+                        loading="lazy"
                       />
                     </CarouselItem>
                   ))}
@@ -165,8 +166,10 @@ export default function ProductDetails({ params }: { params: { id: string } }) {
 
           <Tabs defaultValue="specifications" className="p-8">
             <TabsList>    {/* style the tabs trigger later with theme */}
-              <TabsTrigger value="specifications" className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-800">Specifications</TabsTrigger>
-              <TabsTrigger value="reviews" className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-800">Reviews</TabsTrigger>
+              {/* <TabsTrigger value="specifications" className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-800">Specifications</TabsTrigger>
+              <TabsTrigger value="reviews" className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-800">Reviews</TabsTrigger> */}
+              <TabsTrigger value="specifications">Specifications</TabsTrigger>
+              <TabsTrigger value="reviews">Reviews</TabsTrigger>
             </TabsList>
             <TabsContent value="specifications">
               <Card>

@@ -340,7 +340,7 @@ export default function Products() {
 
         {filteredProducts.length === 0 && (
           <div className="flex flex-col items-center justify-center text-center text-gray-500 dark:text-gray-400 mt-8">
-            <Image src="/not-found-light.svg" alt="No products found" width={250} height={250} className="mb-4" />
+            <Image src="/not-found-light.svg" alt="No products found" width={250} height={250} loading="lazy" className="mb-4" />
             <h2 className="text-2xl font-semibold mb-2">No products found</h2>
             <p className="text-sm">Try adjusting your filters or search term.</p>
             <Button variant="outline" className="mt-4" onClick={clearFilters}>
@@ -352,7 +352,7 @@ export default function Products() {
           {filteredProducts.length !== 0 && filteredProducts.map((product) => (
             <Card key={product.id} className="overflow-hidden">
               <Link href={`/products/${product.id}`}>
-                <Image src={product.image[0]} alt={product.name} width={500} height={300} className="w-full h-48 object-cover" />
+                <Image src={product.image[0]} alt={product.name} width={500} height={300} loading="lazy" className="w-full h-48 object-cover" />
               </Link>
               <CardContent className="p-4">
                 <CardTitle>

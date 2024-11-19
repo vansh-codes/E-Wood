@@ -17,7 +17,7 @@ export default function About() {
           </p>
         </div>
         <div className="dark:bg-gray-800 p-2 rounded-xl overflow-hidden">
-          <Image src="/about.svg" alt="Our Workshop" layout="responsive" width={500} height={300} className="w-full h-full object-cover" />
+          <Image src="/about.svg" alt="Our Workshop" layout="responsive" loading="lazy" width={500} height={300} className="w-full h-full object-cover" />
         </div>
       </div>
 
