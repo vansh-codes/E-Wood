@@ -361,7 +361,7 @@ export default function Products() {
                   </Link>
                 </CardTitle>
                 <p className="text-sm text-gray-500 dark:text-gray-300">{product.category}</p>
-                <p className="text-lg font-bold mt-2 text-gray-900 dark:text-gray-100">₹{product.price.toFixed(2)}</p>
+                <p className="text-lg font-bold mt-2 text-gray-900 dark:text-gray-100">₹{(product.price * (1 - product.discount / 100)).toFixed(2)}</p>
                 <div className="flex items-center mt-2">
                   {Array.from({ length: 5 }).map((_, index) => (
                     <Star

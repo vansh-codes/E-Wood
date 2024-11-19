@@ -143,7 +143,7 @@ export default function Home() {
                       <CardContent>
                         <Image src={product.image[0]} alt={product.name} loading="lazy" width={500} height={300} className="w-full h-48 object-cover rounded-md" />
                         <p className="mt-2 text-sm text-muted-foreground dark:text-gray-400">{product.category}</p>
-                        <p className="mt-1 text-lg font-bold">₹{product.price.toFixed(2)}</p>
+                        <p className="mt-1 text-lg font-bold">₹{(product.price * (1 - product.discount / 100)).toFixed(2)}</p>
                       </CardContent>
                       <CardFooter>
                         <Button asChild className="w-full">
