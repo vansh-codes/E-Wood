@@ -28,20 +28,20 @@ export default function About() {
           { title: "Sustainability", description: "Our commitment to responsible forestry practices helps preserve our natural resources for future generations." },
           { title: "Customer Service", description: "We pride ourselves on providing expert advice and support to help you find the perfect wood for your project." }
         ].map((value, index) => (
-          <Card key={index} className="bg-white dark:bg-gray-800">
+          <Card key={index}>
             <CardHeader>
               <CardTitle className="text-xl font-semibold">{value.title}</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-700 dark:text-gray-300">{value.description}</p>
+              {value.description}
             </CardContent>
           </Card>
         ))}
       </div>
 
-      <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-8">
+      <div className="rounded-lg p-8">
         <h2 className="text-2xl font-semibold mb-4 text-center">Our Commitment to You</h2>
-        <p className="text-gray-700 dark:text-gray-300 text-center max-w-2xl mx-auto">
+        <p className="text-center max-w-2xl mx-auto">
           At WoodTraders, we&apos;re more than just a supplier. We&apos;re your partner in bringing your wood projects to life. From selection to delivery, we&apos;re committed to providing you with an exceptional experience and products that exceed your expectations.
         </p>
       </div>

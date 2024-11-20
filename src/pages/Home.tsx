@@ -31,13 +31,14 @@ const AnimatedSection = ({ children }: { children: React.ReactNode }) => {
       { threshold: 0.1 }
     )
 
-    if (ref.current) {
-      observer.observe(ref.current)
+    const currentRef = ref.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current)
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     }
   }, [controls])
@@ -59,26 +60,22 @@ const AnimatedSection = ({ children }: { children: React.ReactNode }) => {
 }
 
 export default function Home() {
-  const featuredProducts = productsData.products.filter(product => product.featured)
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [scrollY, setScrollY] = useState(0)
   const [isMobile, setIsMobile] = useState(false);
+  const featuredProducts = productsData.products.filter(product => product.featured)
 
   useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY)
     const handleResize = () => setIsMobile(window.innerWidth < 420);
 
     // Initialize state on mount
-    handleScroll();
     handleResize();
 
     // Attach event listeners
-    window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', handleResize);
 
     // Cleanup event listeners on unmount
     return () => {
-      window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', handleResize);
     };
   }, [])
