@@ -1,0 +1,36 @@
+# Node.js dependencies
+node_modules/
+.next/
+
+# Github files
+.github
+.gitignore
+dfd/
+
+# Build artifacts
+dist/
+build/
+
+# Environment files
+.env
+.env.*
+
+# Static files and assets
+public/
+*.ico
+*.png
+*.jpg
+*.svg
+
+.eslintrc.json
+
+# Minified files
+*.min.js
+*.min.css
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts

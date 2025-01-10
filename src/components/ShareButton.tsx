@@ -1,12 +1,15 @@
-"use client"
+'use client'
 
 import React, { useState } from 'react'
 import { Share2 } from 'lucide-react'
-import { Button } from "@/components/ui/button"
+import { Button } from '@/components/ui/button'
 import {
-  DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { toast } from "@/hooks/use-toast"
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu'
+import { toast } from '@/hooks/use-toast'
 
 interface ShareButtonProps {
   url: string
@@ -40,8 +43,8 @@ const ShareButton: React.FC<ShareButtonProps> = ({ url, title }) => {
         case 'copy':
           navigator.clipboard.writeText(url)
           toast({
-            title: "Link copied to clipboard",
-            description: "You can now paste the link anywhere.",
+            title: 'Link copied to clipboard',
+            description: 'You can now paste the link anywhere.',
           })
           return
       }
@@ -54,25 +57,25 @@ const ShareButton: React.FC<ShareButtonProps> = ({ url, title }) => {
   return (
     <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="sm">
-          <Share2 className="h-4 w-4" />
+        <Button variant='outline' size='sm'>
+          <Share2 className='h-4 w-4' />
           {/* Share */}
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align='end'>
-        <DropdownMenuItem onSelect={() => handleShare('native')} className="cursor-pointer">
+        <DropdownMenuItem onSelect={() => handleShare('native')} className='cursor-pointer'>
           Share
         </DropdownMenuItem>
-        <DropdownMenuItem onSelect={() => handleShare('facebook')} className="cursor-pointer">
+        <DropdownMenuItem onSelect={() => handleShare('facebook')} className='cursor-pointer'>
           Facebook
         </DropdownMenuItem>
-        <DropdownMenuItem onSelect={() => handleShare('twitter')} className="cursor-pointer">
+        <DropdownMenuItem onSelect={() => handleShare('twitter')} className='cursor-pointer'>
           Twitter
         </DropdownMenuItem>
-        <DropdownMenuItem onSelect={() => handleShare('linkedin')} className="cursor-pointer">
+        <DropdownMenuItem onSelect={() => handleShare('linkedin')} className='cursor-pointer'>
           LinkedIn
         </DropdownMenuItem>
-        <DropdownMenuItem onSelect={() => handleShare('copy')} className="cursor-pointer">
+        <DropdownMenuItem onSelect={() => handleShare('copy')} className='cursor-pointer'>
           Copy Link
         </DropdownMenuItem>
       </DropdownMenuContent>

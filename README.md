@@ -5,6 +5,7 @@ E-Wood is a cutting-edge e-commerce platform designed for trading wood across th
 ---
 
 ## 📋 **Table of Contents**
+
 - [**E-Wood: Your One-Stop Online Wood Trading Platform** 🌲💻](#e-wood-your-one-stop-online-wood-trading-platform-)
   - [📋 **Table of Contents**](#-table-of-contents)
   - [✨ **Introduction**](#-introduction)
@@ -40,7 +41,8 @@ E-Wood simplifies the wood trading process with an intuitive platform tailored f
 
 E-Wood leverages modern frontend technologies for performance and scalability:
 
-- **Frontend**: 
+- **Frontend**:
+
   - [Next.js](https://nextjs.org/)
   - [React.js](https://reactjs.org/)
   - [TypeScript](https://www.typescriptlang.org/)
@@ -57,17 +59,20 @@ E-Wood leverages modern frontend technologies for performance and scalability:
 Follow these steps to set up E-Wood locally:
 
 1. **Clone the Repository**:
+
    ```bash
    git clone https://github.com/yourusername/e-wood.git
    cd e-wood
    ```
 
 2. **Install Dependencies**:
+
    ```bash
    npm install
    ```
 
 3. **Start the Development Server**:
+
    ```bash
    npm run dev
    ```
@@ -107,4 +112,5 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 ## 💡 **Summary**
+
 E-Wood offers a seamless e-commerce platform for wood trading, leveraging advanced frontend technologies like Next.js, TypeScript, and TailwindCSS. Its responsive and theme-enabled design provides an intuitive shopping experience for all users.

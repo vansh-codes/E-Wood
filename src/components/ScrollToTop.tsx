@@ -1,7 +1,7 @@
-"use client"
+'use client'
 
 import { useState, useEffect } from 'react'
-import { Button } from "@/components/ui/button"
+import { Button } from '@/components/ui/button'
 import { ArrowUp } from 'lucide-react'
 
 export function ScrollToTop() {
@@ -27,11 +27,11 @@ export function ScrollToTop() {
 
   return (
     <Button
-      className="fixed bottom-8 right-8 rounded-full p-3"
+      className='fixed bottom-8 right-8 rounded-full p-3'
       onClick={scrollToTop}
-      aria-label="Scroll to top"
+      aria-label='Scroll to top'
     >
-      <ArrowUp className="h-6 w-6" />
+      <ArrowUp className='h-6 w-6' />
     </Button>
   )
 }

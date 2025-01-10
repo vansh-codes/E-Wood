@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next'
- 
+
 //* refer here: https://nextjs.org/docs/app/api-reference/file-conventions/metadata/robots
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -11,7 +11,6 @@ export default function robots(): MetadataRoute.Robots {
     sitemap: 'https://e-wood.vercel.app/sitemap.xml',
   }
 }
-
 
 /* User-agent: *
 

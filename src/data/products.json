@@ -1,275 +1,273 @@
 {
-    "products": [
+  "products": [
+    {
+      "id": 1,
+      "name": "Sheesham Wood Logs",
+      "category": "Hardwood",
+      "price": 2400.0,
+      "discount": 10,
+      "image": ["/sheesham1.png", "/sheesham2.png", "/sheesham3.png"],
+      "description": "Durable Sheesham wood logs, ideal for furniture, flooring, and decorative projects.",
+      "specifications": {
+        "length": "2 meters",
+        "width": "150 mm",
+        "thickness": "25 mm",
+        "grade": "A"
+      },
+      "stock": 150,
+      "quantity": 1,
+      "featured": true,
+      "rating": 4.5,
+      "reviews": [
         {
-            "id": 1,
-            "name": "Sheesham Wood Logs",
-            "category": "Hardwood",
-            "price": 2400.0,
-            "discount": 10,
-            "image": ["/sheesham1.png", "/sheesham2.png", "/sheesham3.png"],
-            "description": "Durable Sheesham wood logs, ideal for furniture, flooring, and decorative projects.",
-            "specifications": {
-                "length": "2 meters",
-                "width": "150 mm",
-                "thickness": "25 mm",
-                "grade": "A"
-            },
-            "stock": 150,
-            "quantity": 1,
-            "featured": true,
-            "rating": 4.5,
-            "reviews": [
-                {
-                    "id": 1,
-                    "user": "Ravi Kumar",
-                    "rating": 5,
-                    "comment": "Excellent quality, perfect for furniture."
-                },
-                {
-                    "id": 2,
-                    "user": "Aditi Sharma",
-                    "rating": 4,
-                    "comment": "Strong and durable, but slightly heavy."
-                }
-            ]
+          "id": 1,
+          "user": "Ravi Kumar",
+          "rating": 5,
+          "comment": "Excellent quality, perfect for furniture."
         },
         {
-            "id": 2,
-            "name": "Aam Wood Logs",
-            "category": "Hardwood",
-            "price": 1400.0,
-            "discount": 10,
-            "image": ["/aam2.png", "/aam1.png", "/aam3.png", "/aam4.png", "/aam5.png"],
-            "description": "Affordable Aam wood logs, ideal for lightweight furniture and DIY projects.",
-            "specifications": {
-                "length": "1.8 meters",
-                "width": "120 mm",
-                "thickness": "20 mm",
-                "grade": "B"
-            },
-            "stock": 200,
-            "quantity": 1,
-            "featured": true,
-            "rating": 4.0,
-            "reviews": []
-        },
-        {
-            "id": 3,
-            "name": "Neem Wood Logs",
-            "category": "Hardwood",
-            "price": 1200.0,
-            "discount": 15,
-            "image": ["/neem1.png", "/neem2.png", "/neem3.png", "/neem4.png"],
-            "description": "Eco-friendly Neem wood with anti-termite properties, ideal for carving and small projects.",
-            "specifications": {
-                "length": "1.5 meters",
-                "width": "100 mm",
-                "thickness": "20 mm",
-                "grade": "Rustic"
-            },
-            "stock": 180,
-            "quantity": 1,
-            "featured": false,
-            "rating": 4.1,
-            "reviews": [
-                {
-                    "id": 1,
-                    "user": "Rahul Jain",
-                    "rating": 5,
-                    "comment": "Great for small projects and carving."
-                },
-                {
-                    "id": 2,
-                    "user": "Madhuri Joshi",
-                    "rating": 4,
-                    "comment": "Good quality but slightly rough."
-                }
-            ]
-        },
-        {
-            "id": 4,
-            "name": "Jamun Wood Logs",
-            "category": "Hardwood",
-            "price": 1600.0,
-            "discount": 12,
-            "image": ["/jamun1.png", "/jamun2.png", "/jamun3.png", "/jamun4.png"],
-            "description": "Strong Jamun wood logs, suitable for durable furniture and structural applications.",
-            "specifications": {
-                "length": "2 meters",
-                "width": "140 mm",
-                "thickness": "25 mm",
-                "grade": "A"
-            },
-            "stock": 100,
-            "quantity": 1,
-            "featured": false,
-            "rating": 4.2,
-            "reviews": []
-        },
-        {
-            "id": 5,
-            "name": "Babool Wood Logs",
-            "category": "Hardwood",
-            "price": 800.0,
-            "discount": 10,
-            "image": ["/babool1.png", "/babool2.png", "/babool3.png", "/babool4.png"],
-            "description": "Affordable Babool wood logs, ideal for basic furniture and utility purposes.",
-            "specifications": {
-                "length": "1.8 meters",
-                "width": "100 mm",
-                "thickness": "20 mm",
-                "grade": "Standard"
-            },
-            "stock": 250,
-            "quantity": 1,
-            "featured": false,
-            "rating": 4.0,
-            "reviews": []
-        },
-        {
-            "id": 6,
-            "name": "Mahogany Wood Logs",
-            "category": "Hardwood",
-            "price": 599.0,
-            "discount": 8,
-            "image": ["/mahogany1.png", "/mahogany2.png", "/mahogany3.png"],
-            "description": "Premium Mahogany wood logs, ideal for fine furniture and cabinetry.",
-            "specifications": {
-                "length": "2.4 meters",
-                "width": "150 mm",
-                "thickness": "30 mm",
-                "grade": "A"
-            },
-            "stock": 90,
-            "quantity": 1,
-            "featured": true,
-            "rating": 4.7,
-            "reviews": [
-                {
-                    "id": 1,
-                    "user": "Ananya Desai",
-                    "rating": 5,
-                    "comment": "Beautiful finish and excellent durability."
-                },
-                {
-                    "id": 2,
-                    "user": "Suresh K.",
-                    "rating": 4,
-                    "comment": "High-quality but slightly expensive."
-                }
-            ]
-        },
-        {
-            "id": 7,
-            "name": "Acacia Wood Logs",
-            "category": "Hardwood",
-            "price": 2100.0,
-            "discount": 5,
-            "image": ["/acacia3.png", "/acacia1.png", "/acacia2.png"],
-            "description": "High-strength Acacia wood logs, perfect for flooring and heavy-duty furniture.",
-            "specifications": {
-                "length": "2 meters",
-                "width": "130 mm",
-                "thickness": "25 mm",
-                "grade": "B"
-            },
-            "stock": 120,
-            "quantity": 1,
-            "featured": false,
-            "rating": 4.3,
-            "reviews": []
-        },
-        {
-            "id": 8,
-            "name": "Teak Wood Planks",
-            "category": "Hardwood",
-            "price": 1399.0,
-            "discount": 10,
-            "image": ["/teak1.png", "/teak2.png", "/teak3.png"],
-            "description": "Durable Teak wood planks, ideal for premium furniture and outdoor projects.",
-            "specifications": {
-                "length": "2.5 meters",
-                "width": "150 mm",
-                "thickness": "25 mm",
-                "grade": "A"
-            },
-            "stock": 60,
-            "quantity": 1,
-            "featured": true,
-            "rating": 4.6,
-            "reviews": []
-        },
-        {
-            "id": 9,
-            "name": "Rosewood Logs",
-            "category": "Exotic Wood",
-            "price": 12999.0,
-            "discount": 20,
-            "image": ["/rosewood2.png", "/rosewood1.png", "/rosewood3.png"],
-            "description": "Premium rosewood logs, known for their rich color and durability.",
-            "specifications": {
-                "length": "1.2 meters",
-                "width": "100 mm",
-                "thickness": "30 mm",
-                "grade": "Premium"
-            },
-            "stock": 60,
-            "quantity": 1,
-            "featured": true,
-            "rating": 4.5,
-            "reviews": [
-                {
-                    "id": 1,
-                    "user": "Sanjay Mehta",
-                    "rating": 5,
-                    "comment": "Beautiful wood, perfect for musical instruments."
-                },
-                {
-                    "id": 2,
-                    "user": "Rina Shah",
-                    "rating": 5,
-                    "comment": "Excellent quality, worth the price."
-                }
-            ]
-        },
-        {
-            "id": 10,
-            "name": "Pine Wood Panels",
-            "category": "Softwood",
-            "price": 2999.0,
-            "discount": 15,
-            "image": ["/pinewood1.png", "/pinewood2.png", "/pinewood3.png"],
-            "description": "Affordable pine panels suitable for interior design, wall paneling, and DIY projects.",
-            "specifications": {
-                "length": "3 meters",
-                "width": "200 mm",
-                "thickness": "25 mm",
-                "grade": "No. 2"
-            },
-            "stock": 120,
-            "quantity": 1,
-            "featured": false,
-            "rating": 4.5,
-            "reviews": [
-                
-            ]
+          "id": 2,
+          "user": "Aditi Sharma",
+          "rating": 4,
+          "comment": "Strong and durable, but slightly heavy."
         }
-    ],
-    "categories": [
-        {      
-            "name": "Hardwood",
-            "description": "Premium hardwood varieties for fine woodworking",
-            "image": "/hardwood.png"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Aam Wood Logs",
+      "category": "Hardwood",
+      "price": 1400.0,
+      "discount": 10,
+      "image": ["/aam2.png", "/aam1.png", "/aam3.png", "/aam4.png", "/aam5.png"],
+      "description": "Affordable Aam wood logs, ideal for lightweight furniture and DIY projects.",
+      "specifications": {
+        "length": "1.8 meters",
+        "width": "120 mm",
+        "thickness": "20 mm",
+        "grade": "B"
+      },
+      "stock": 200,
+      "quantity": 1,
+      "featured": true,
+      "rating": 4.0,
+      "reviews": []
+    },
+    {
+      "id": 3,
+      "name": "Neem Wood Logs",
+      "category": "Hardwood",
+      "price": 1200.0,
+      "discount": 15,
+      "image": ["/neem1.png", "/neem2.png", "/neem3.png", "/neem4.png"],
+      "description": "Eco-friendly Neem wood with anti-termite properties, ideal for carving and small projects.",
+      "specifications": {
+        "length": "1.5 meters",
+        "width": "100 mm",
+        "thickness": "20 mm",
+        "grade": "Rustic"
+      },
+      "stock": 180,
+      "quantity": 1,
+      "featured": false,
+      "rating": 4.1,
+      "reviews": [
+        {
+          "id": 1,
+          "user": "Rahul Jain",
+          "rating": 5,
+          "comment": "Great for small projects and carving."
         },
         {
-            "name": "Softwood",
-            "description": "Versatile softwood options for construction and general use",
-            "image": "/softwood.png"
-        },
-        {
-            "name": "Exotic Wood",
-            "description": "Unique and rare wood species for special projects",
-            "image": "/exotic.png"
+          "id": 2,
+          "user": "Madhuri Joshi",
+          "rating": 4,
+          "comment": "Good quality but slightly rough."
         }
-    ]
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Jamun Wood Logs",
+      "category": "Hardwood",
+      "price": 1600.0,
+      "discount": 12,
+      "image": ["/jamun1.png", "/jamun2.png", "/jamun3.png", "/jamun4.png"],
+      "description": "Strong Jamun wood logs, suitable for durable furniture and structural applications.",
+      "specifications": {
+        "length": "2 meters",
+        "width": "140 mm",
+        "thickness": "25 mm",
+        "grade": "A"
+      },
+      "stock": 100,
+      "quantity": 1,
+      "featured": false,
+      "rating": 4.2,
+      "reviews": []
+    },
+    {
+      "id": 5,
+      "name": "Babool Wood Logs",
+      "category": "Hardwood",
+      "price": 800.0,
+      "discount": 10,
+      "image": ["/babool1.png", "/babool2.png", "/babool3.png", "/babool4.png"],
+      "description": "Affordable Babool wood logs, ideal for basic furniture and utility purposes.",
+      "specifications": {
+        "length": "1.8 meters",
+        "width": "100 mm",
+        "thickness": "20 mm",
+        "grade": "Standard"
+      },
+      "stock": 250,
+      "quantity": 1,
+      "featured": false,
+      "rating": 4.0,
+      "reviews": []
+    },
+    {
+      "id": 6,
+      "name": "Mahogany Wood Logs",
+      "category": "Hardwood",
+      "price": 599.0,
+      "discount": 8,
+      "image": ["/mahogany1.png", "/mahogany2.png", "/mahogany3.png"],
+      "description": "Premium Mahogany wood logs, ideal for fine furniture and cabinetry.",
+      "specifications": {
+        "length": "2.4 meters",
+        "width": "150 mm",
+        "thickness": "30 mm",
+        "grade": "A"
+      },
+      "stock": 90,
+      "quantity": 1,
+      "featured": true,
+      "rating": 4.7,
+      "reviews": [
+        {
+          "id": 1,
+          "user": "Ananya Desai",
+          "rating": 5,
+          "comment": "Beautiful finish and excellent durability."
+        },
+        {
+          "id": 2,
+          "user": "Suresh K.",
+          "rating": 4,
+          "comment": "High-quality but slightly expensive."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Acacia Wood Logs",
+      "category": "Hardwood",
+      "price": 2100.0,
+      "discount": 5,
+      "image": ["/acacia3.png", "/acacia1.png", "/acacia2.png"],
+      "description": "High-strength Acacia wood logs, perfect for flooring and heavy-duty furniture.",
+      "specifications": {
+        "length": "2 meters",
+        "width": "130 mm",
+        "thickness": "25 mm",
+        "grade": "B"
+      },
+      "stock": 120,
+      "quantity": 1,
+      "featured": false,
+      "rating": 4.3,
+      "reviews": []
+    },
+    {
+      "id": 8,
+      "name": "Teak Wood Planks",
+      "category": "Hardwood",
+      "price": 1399.0,
+      "discount": 10,
+      "image": ["/teak1.png", "/teak2.png", "/teak3.png"],
+      "description": "Durable Teak wood planks, ideal for premium furniture and outdoor projects.",
+      "specifications": {
+        "length": "2.5 meters",
+        "width": "150 mm",
+        "thickness": "25 mm",
+        "grade": "A"
+      },
+      "stock": 60,
+      "quantity": 1,
+      "featured": true,
+      "rating": 4.6,
+      "reviews": []
+    },
+    {
+      "id": 9,
+      "name": "Rosewood Logs",
+      "category": "Exotic Wood",
+      "price": 12999.0,
+      "discount": 20,
+      "image": ["/rosewood2.png", "/rosewood1.png", "/rosewood3.png"],
+      "description": "Premium rosewood logs, known for their rich color and durability.",
+      "specifications": {
+        "length": "1.2 meters",
+        "width": "100 mm",
+        "thickness": "30 mm",
+        "grade": "Premium"
+      },
+      "stock": 60,
+      "quantity": 1,
+      "featured": true,
+      "rating": 4.5,
+      "reviews": [
+        {
+          "id": 1,
+          "user": "Sanjay Mehta",
+          "rating": 5,
+          "comment": "Beautiful wood, perfect for musical instruments."
+        },
+        {
+          "id": 2,
+          "user": "Rina Shah",
+          "rating": 5,
+          "comment": "Excellent quality, worth the price."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Pine Wood Panels",
+      "category": "Softwood",
+      "price": 2999.0,
+      "discount": 15,
+      "image": ["/pinewood1.png", "/pinewood2.png", "/pinewood3.png"],
+      "description": "Affordable pine panels suitable for interior design, wall paneling, and DIY projects.",
+      "specifications": {
+        "length": "3 meters",
+        "width": "200 mm",
+        "thickness": "25 mm",
+        "grade": "No. 2"
+      },
+      "stock": 120,
+      "quantity": 1,
+      "featured": false,
+      "rating": 4.5,
+      "reviews": []
+    }
+  ],
+  "categories": [
+    {
+      "name": "Hardwood",
+      "description": "Premium hardwood varieties for fine woodworking",
+      "image": "/hardwood.png"
+    },
+    {
+      "name": "Softwood",
+      "description": "Versatile softwood options for construction and general use",
+      "image": "/softwood.png"
+    },
+    {
+      "name": "Exotic Wood",
+      "description": "Unique and rare wood species for special projects",
+      "image": "/exotic.png"
+    }
+  ]
 }
