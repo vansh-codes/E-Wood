@@ -1,5 +1,5 @@
 'use strict'
-import SignupPage from '@/components/Signup'
+import { SignUp } from '@clerk/nextjs'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -110,5 +110,5 @@ export const metadata: Metadata = {
 }
 
 export default function page() {
-  return <SignupPage />
+  return <SignUp />
 }
