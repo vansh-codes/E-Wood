@@ -1,6 +1,6 @@
 'use strict'
 import { Suspense } from 'react'
-import Products from '@/pages/Products'
+import Products from '@/pages/Products/Products'
 import type { Metadata } from 'next'
 import { Loader2 } from 'lucide-react'
 

@@ -63,6 +63,25 @@ export default function Products() {
   const { addToCart, addToWishlist, removeFromCart, removeFromWishlist, cartItems, wishlistItems } =
     useStore()
 
+  // useEffect(() => {
+  //   const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000'
+  //   const fetchProducts = async () => {
+  //     setLoading(true);
+  //     try {
+  //       const res = await fetch(`${API}/api/products?batch=${PRODUCTS_PER_PAGE}`, {
+  //         cache: 'no-store'
+  //       }).then(res => res.json())
+  //       setVisibleProducts(res);
+  //     } catch (error) {
+  //       console.error("Failed to fetch products", error);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
+
+  //   fetchProducts();
+  // }, []);
+
   useEffect(() => {
     const category = searchParams?.get('category') || 'All'
     const minPrice = searchParams?.get('minPrice') || '99'
