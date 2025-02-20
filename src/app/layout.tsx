@@ -1,6 +1,8 @@
 'use strict'
 import './globals.css'
 import type { Metadata } from 'next'
+import { ClerkProvider } from '@clerk/nextjs'
+import { dark } from '@clerk/themes'
 import localFont from 'next/font/local'
 import { ThemeProvider } from '@/components/theme-provider'
 import { StoreProvider } from '@/context/StoreContext'
@@ -20,9 +22,6 @@ const geistMono = localFont({
   weight: '100 900',
 })
 
-//TODO: Add skeletons for loading states
-//TODO: Add tooltips
-//TODO: Add toast notifications
 //TODO: enhance seo title of pages refer: https://dev.to/souhailxedits/setting-titles-dynamically-with-nextjs-metadata-4hog
 
 export const metadata: Metadata = {
@@ -113,23 +112,29 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang='en'>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <StoreProvider>
-          <ThemeProvider
-            attribute='class'
-            defaultTheme='system'
-            enableSystem
-            disableTransitionOnChange // check for whats this
-          >
-            <Header />
-            <ScrollProgressBar />
-            {children}
-            <Footer />
-            <ScrollToTop />
-          </ThemeProvider>
-        </StoreProvider>
-      </body>
-    </html>
+    <ClerkProvider
+      appearance={{
+        baseTheme: dark,
+      }}
+    >
+      <html lang='en'>
+        <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+          <StoreProvider>
+            <ThemeProvider
+              attribute='class'
+              defaultTheme='system'
+              enableSystem
+              disableTransitionOnChange // check for whats this
+            >
+              <Header />
+              <ScrollProgressBar />
+              {children}
+              <Footer />
+              <ScrollToTop />
+            </ThemeProvider>
+          </StoreProvider>
+        </body>
+      </html>
+    </ClerkProvider>
   )
 }

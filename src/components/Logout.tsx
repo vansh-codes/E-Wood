@@ -1,4 +1,4 @@
-'use client'
+/* 'use client'
 
 import { useRouter } from 'next/navigation'
 import { useStore } from '@/context/StoreContext'
@@ -37,3 +37,4 @@ export default function Logout() {
     </div>
   )
 }
+ */

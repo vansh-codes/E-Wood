@@ -9,7 +9,6 @@ const StoreContext = createContext<ContextProps | undefined>(undefined)
 export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [cartItems, setCartItems] = useState<Product[]>([])
   const [wishlistItems, setWishlistItems] = useState<Product[]>([])
-  const [loggedIn, setLoggedIn] = useState(false)
 
   // Handlers for cart and wishlist actions
   const addToCart = (item: Product) =>
@@ -28,10 +27,6 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   const removeFromWishlist = (id: number) =>
     setWishlistItems((prev) => prev.filter((item) => item.id !== id))
 
-  const setLogin = (value: boolean) => {
-    setLoggedIn(value)
-  }
-
   // Memoized context value for optimized re-renders
   const contextValue = useMemo(
     () => ({
@@ -43,10 +38,8 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       removeFromWishlist,
       cartCount: cartItems.length,
       wishlistCount: wishlistItems.length,
-      loggedIn: loggedIn,
-      setLogin,
     }),
-    [cartItems, wishlistItems, loggedIn]
+    [cartItems, wishlistItems]
   )
 
   return <StoreContext.Provider value={contextValue}>{children}</StoreContext.Provider>
@@ -68,7 +61,6 @@ export const useStore = () => {
       removeFromWishlist: () => {},
       cartCount: 0,
       wishlistCount: 0,
-      loggedIn: false,
       setLogin: () => {},
     } // Return default values
   }

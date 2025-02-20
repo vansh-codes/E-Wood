@@ -26,9 +26,10 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 import { ShoppingCart, Heart, User, Search, Menu, LogIn } from 'lucide-react'
+import { SignedIn, SignedOut, SignInButton, SignOutButton } from '@clerk/nextjs'
 
 export function Header() {
-  const { cartCount, wishlistCount, loggedIn } = useStore()
+  const { cartCount, wishlistCount } = useStore()
   const [isSearchOpen, setIsSearchOpen] = useState(false)
   const router = useRouter()
 
@@ -67,7 +68,7 @@ export function Header() {
               <SheetTitle>Menu</SheetTitle>
               {/* <SheetClose /> */}
             </SheetHeader>
-            <MobileNav loggedIn={loggedIn} />
+            <MobileNav />
           </SheetContent>
         </Sheet>
 
@@ -121,7 +122,7 @@ export function Header() {
               <span className='sr-only'>Cart</span>
             </Button>
 
-            {loggedIn ? (
+            <SignedIn>
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <Button variant='ghost' size='icon'>
@@ -142,18 +143,19 @@ export function Header() {
                     Settings
                   </DropdownMenuItem>
                   <DropdownMenuSeparator />
-                  <DropdownMenuItem onSelect={() => router.push('/logout')}>
-                    Log out
-                  </DropdownMenuItem>
+                  <SignOutButton>
+                    <DropdownMenuItem>Log out</DropdownMenuItem>
+                  </SignOutButton>
                 </DropdownMenuContent>
               </DropdownMenu>
-            ) : (
-              <Button variant='ghost' size='icon' onClick={() => router.push('/login')}>
-                <LogIn className='h-5 w-5' />
-                <span className='sr-only'>Login</span>
-              </Button>
-            )}
-
+            </SignedIn>
+            <SignedOut>
+              <SignInButton>
+                <Button variant='ghost' size='icon'>
+                  <LogIn className='h-5 w-5' />
+                </Button>
+              </SignInButton>
+            </SignedOut>
             <ModeToggle />
           </div>
         </div>
@@ -162,8 +164,7 @@ export function Header() {
   )
 }
 
-function MobileNav({ loggedIn }: { loggedIn: boolean }) {
-  const router = useRouter()
+function MobileNav() {
   return (
     <div className='flex flex-col space-y-6 items-center mt-12'>
       <Link href='/' className='font-bold'>
@@ -178,15 +179,24 @@ function MobileNav({ loggedIn }: { loggedIn: boolean }) {
       <Link href='/contact' className='font-bold'>
         Contact
       </Link>
-      {loggedIn && (
-        <SheetFooter className='absolute bottom-1'>
-          <SheetClose asChild>
-            <Button variant='outline' onClick={() => router.push('/logout')}>
-              Logout
-            </Button>
-          </SheetClose>
-        </SheetFooter>
-      )}
+      <SheetFooter className='absolute bottom-1'>
+        <SheetClose asChild>
+          <>
+            <SignedOut>
+              <SignInButton>
+                <Button variant='ghost' size='icon'>
+                  <LogIn className='h-5 w-5' />
+                </Button>
+              </SignInButton>
+            </SignedOut>
+            <SignedIn>
+              <SignOutButton>
+                <Button variant='outline'>Log out</Button>
+              </SignOutButton>
+            </SignedIn>
+          </>
+        </SheetClose>
+      </SheetFooter>
     </div>
   )
 }

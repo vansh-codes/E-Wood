@@ -1,6 +1,6 @@
 'use strict'
-import Profile from '@/pages/Profile'
 import type { Metadata } from 'next'
+import { UserProfile } from '@clerk/nextjs'
 
 export const metadata: Metadata = {
   title: 'Profile',
@@ -110,5 +110,9 @@ export const metadata: Metadata = {
 }
 
 export default function page() {
-  return <Profile />
+  return (
+    <div className='flex justify-center items-center my-4'>
+      <UserProfile />
+    </div>
+  )
 }
